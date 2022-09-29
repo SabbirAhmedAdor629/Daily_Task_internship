@@ -1,0 +1,25 @@
+[
+	{
+		"coursename": "Reacjs Bootcamp",
+		"Price": 299,
+		"Platform": "LearnCodeOnline.in",
+		"tags": [
+			"web-dev",
+			"js"
+		]
+	},
+	{
+		"coursename": "MERN Bootcamp",
+		"Price": 199,
+		"Platform": "LearnCodeOnline.in",
+		"tags": [
+			"full_stack",
+			"js"
+		]
+	},
+	{
+		"coursename": "Angular Bootcamp",
+		"Price": 299,
+		"Platform": "LearnCodeOnline.in"
+	}
+]
