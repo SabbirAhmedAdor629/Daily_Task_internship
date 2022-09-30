@@ -21,7 +21,7 @@ func main() {
 	enc := gob.NewEncoder(&network)
 	//dec := gob.NewDecoder(&network)
 
-	// Encode (send) the value.
+	//value.
 	list_of_courses := []course{
 		{"Reacjs Bootcamp", 299, "LearnCodeOnline.in", "abc123", []string{"web-dev", "js"}},
 		{"MERN Bootcamp", 199, "LearnCodeOnline.in", "bcd123", []string{"full_stack", "js"}},
@@ -38,8 +38,8 @@ func main() {
 	}
 	fmt.Println(network.Bytes())
 	
-	arr1 := network.Bytes()
-	mJson.EncodeJson(arr1)
+	// arr1 := network.Bytes()
+	mJson.EncodeJson(network)
 
 	// Decode (receive) the value.
 	// var list_of_subjects []course

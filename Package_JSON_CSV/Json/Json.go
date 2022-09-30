@@ -1,11 +1,11 @@
 package MyJson
 
 import (
+	"bytes"
+	"encoding/gob"
 	"encoding/json"
 	"io/ioutil"
-	// "bytes"
-	// "encoding/gob"
-	// "log"
+	"log"
 )
 
 type course struct {
@@ -17,7 +17,7 @@ type course struct {
 }
 
 // Encoding
-func EncodeJson(value []byte) {
+func EncodeJson(network bytes.Buffer) {
 
 	// Decode (receive) the value.
 	// var network bytes.Buffer
@@ -27,15 +27,11 @@ func EncodeJson(value []byte) {
 	if err != nil {
 		log.Fatal("decode error:", err)
 	}
-
-
-
-
+	
 	// package this data as JSON data
-	finaljson, err := json.MarshalIndent(value, "", "\t")
+	finaljson, err := json.MarshalIndent(list_of_subjects, "", "\t")
 	if err != nil {
 		panic(err)
 	}
 	_ = ioutil.WriteFile("test.json", finaljson, 0777)
-
 }
