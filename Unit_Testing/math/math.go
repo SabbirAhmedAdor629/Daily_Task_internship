@@ -1,16 +1,16 @@
 package custom_math
 
-func add(x, y int) int {
+func Add(x, y int) int {
 	return x + y
 }
 
-func subtract(x, y int) int {
-	return x - y
+func Subtract(x, y int) int {
+	return y-x
 }
 
 func divide(x, y int) float64 {
-	if (y==0){
-		return	0;
+	if (y == 0){
+		return float64(0.0)
 	}
 	return float64(x / y)
 }
