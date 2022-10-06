@@ -6,7 +6,7 @@ import (
 )
 
 type Weather struct {
-	City			string	`json:"city"`
+	City		string	`json:"city"`
 	Forecast	string	`json:"forecast"`
 }
 
