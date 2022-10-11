@@ -7,7 +7,7 @@ import (
 
 type Weather struct {
 	City     string `json:"city"`
-	Forecast string `json:"forecast"`
+	Forecast string `json:"forecast"` 
 }
 
 func GetWeather(url string) (*Weather, error) {
