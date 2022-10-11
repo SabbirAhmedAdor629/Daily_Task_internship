@@ -6,8 +6,8 @@ import (
 )
 
 type Weather struct {
-	City		string	`json:"city"`
-	Forecast	string	`json:"forecast"`
+	City     string `json:"city"`
+	Forecast string `json:"forecast"`
 }
 
 func GetWeather(url string) (*Weather, error) {
@@ -15,8 +15,8 @@ func GetWeather(url string) (*Weather, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	defer resp.Body.Close()
-	
 	var weather Weather
 	err = json.NewDecoder(resp.Body).Decode(&weather)
 	if err != nil {
