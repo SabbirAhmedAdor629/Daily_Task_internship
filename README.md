@@ -1,6 +1,7 @@
 # Task_internship
 
-Json : 
+Json : https://codezup.com/everything-about-encoding-decoding-json-data-golang/amp/
+
 Write in json : https://www.golangprograms.com/golang-writing-struct-to-json-file.html
 
 Read in json : https://tutorialedge.net/golang/parsing-json-with-golang/
