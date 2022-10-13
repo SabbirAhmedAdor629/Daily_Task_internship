@@ -2,6 +2,8 @@
 
 Json : https://codezup.com/everything-about-encoding-decoding-json-data-golang/amp/
 
+For validating JSON : https://jsonlint.com/
+
 Write in json : https://www.golangprograms.com/golang-writing-struct-to-json-file.html
 
 Read in json : https://tutorialedge.net/golang/parsing-json-with-golang/
