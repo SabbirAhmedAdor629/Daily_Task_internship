@@ -17,13 +17,13 @@ type mySelf struct {
 	Parents_Info []parentsInfo
 }
 
+
 type parentsInfo struct {
 	Type       string
 	Name       string
-	Occupation string
 	Fav_colour []string
+	Occupation string
 }
-
 
 
 func main() {
@@ -39,9 +39,9 @@ func main() {
 		Occupation: "Teacher",
 		Fav_colour: []string{"black", "green", "blue"},
 	}
-
-
-
+	
+	
+	
 	Parents_Info := []parentsInfo{Father, Mother}
 	Self := mySelf{"Sabbir", Parents_Info}
 	People := People{[]mySelf{Self}}

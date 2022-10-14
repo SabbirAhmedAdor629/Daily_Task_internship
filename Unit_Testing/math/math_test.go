@@ -3,10 +3,10 @@ import (
 	"testing"
 )
 
-type AddData struct{
-	x,y int
-	output int
-}
+// type AddData struct{
+// 	x,y int
+// 	output int
+// }
 
 func TestAdd_Sub(t *testing.T){
 
