@@ -33,6 +33,8 @@ Converting struct into bytes :
 https://go.dev/blog/gob (gob package by go blog)
 https://go.dev/play/p/0ZX7J0fuJTv (play)
 
+
+
 Unit Testing : 
 https://www.youtube.com/watch?v=XQzTUa9LPU8 (by nerdcademy)
 https://golangdocs.com/golang-unit-testing (Website)
@@ -44,4 +46,15 @@ gcc must be setup first
 Control flow (defer,panic,recover) : https://youtu.be/YS4e4q9oBaU 
 
 Handle Func : https://www.youtube.com/watch?v=YMFkgN9r_jg (yt nerdcadamy)
+
+
+
+
+PostgreSQL :
+
+https://www.youtube.com/watch?v=qw--VYLpxG4  ( yt freecodecamp)
+
+to setup environment variables : https://linuxhint.com/connect-to-postgresql-database-command-line-windows/
+
+
 
