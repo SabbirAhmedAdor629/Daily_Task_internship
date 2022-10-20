@@ -36,16 +36,23 @@ func main(){
 		"push_message" :[
 			{
 				"member_guid" : "4a1147ac-494b-11ed-b878-0242ac120002",
-				"device_id" : "sabbir2",
-				"push_registration_id" : "sabbir3",
-				"aws_message_id" : "sabbir4",
-				"aws_arn_status" : "sabbir5"
+				"device_id" : "3478-34534",
+				"push_registration_id" : "354433",
+				"aws_message_id" : "1231",
+				"aws_arn_status" : "Failed"
+			},
+			{
+				"member_guid" : "4a1147ac-494b-11ed-b878-0242ac120002",
+				"device_id" : "238923-3432",
+				"push_registration_id" : "8989234",
+				"aws_message_id" : "178232",
+				"aws_arn_status" : "Success"
 			}
 		],
 		"message": {
-			"player_id" : 12,
+			"player_id" : 12001,
 			"message-template_id" : 24,
-			"data" : "sabbir9",
+			"data" : "Push message notification",
 			"badge" : true
 		}
 	   
@@ -63,6 +70,7 @@ func main(){
 			fmt.Println("Push_Registration_Id : ",obj.Push_Registration_Id)
 			fmt.Println("Aws_Message_Id : ",obj.Aws_Message_Id)
 			fmt.Println("Aws_Arn_Status : ",obj.Aws_Arn_Status)
+			fmt.Println("\n")
 		}
 		fmt.Println(" ")
 		
@@ -77,13 +85,3 @@ func main(){
 }
 
 
-
-// func main() {
-// 	reader, _ := os.Open("data.json")
-// 	decoder := json.NewDecoder(reader)
-
-// 	event := &SNS_Event{}
-// 	decoder.Decode(event)
-
-// 	fmt.Println(event)
-// }

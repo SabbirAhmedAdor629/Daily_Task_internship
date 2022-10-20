@@ -8,34 +8,34 @@ import (
 
 type MySelf struct {
 	Name         string
-	Parents_Info []parentsInfo
+	Parents_Info []Parents_Info
 }
 
-type parentsInfo struct {
+type Parents_Info struct {
 	Type       string
 	Name       string
 	Occupation string
 	Fav_colour []string
 }
 
-func main() {
-	Father := parentsInfo{
+func main(){
+	Father := Parents_Info{
 		Type:       "Father Information",
 		Name:       "Ahmed",
 		Occupation: "businessman",
 		Fav_colour: []string{"red", "green", "blue"},
 	}
-	Mother := parentsInfo{
+	Mother := Parents_Info{
 		Type:       "Mothers Information",
 		Name:       "Begum",
 		Occupation: "Teacher",
+		Fav_colour:  []string{"black", "green", "blue"},
 	}
-	Mother.Fav_colour = []string{"black", "green", "blue"}
 
-	Parents_Info := []parentsInfo{Father, Mother}
-	self := MySelf{"Sabbir", Parents_Info}
+	Parents_Information := []Parents_Info{Father, Mother}
+	self := MySelf{"Sabbir", Parents_Information}
 
-	fmt.Printf("Company is %v\\n", self)
+	fmt.Printf("Details is : %v\\n", self)
 
 	file, _ := json.MarshalIndent(self, "", " ")
 	_ = ioutil.WriteFile("test.json", file, 0777)

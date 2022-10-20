@@ -20,5 +20,11 @@ func main() {
 	product := &Product{}
 	decoder.Decode(product)
 
-	fmt.Println(product)
+	fmt.Println(product.Id)
+	fmt.Println(product.ImageURL)
+	fmt.Println(product.Name)
+
+	//fmt.Println(product)
+		
+	
 }
