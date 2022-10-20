@@ -64,4 +64,11 @@ func main() {
 
 	//Reading each value by its key
 	fmt.Println("guid :", result["guid"])
+
+	fmt.Println("status :", result["push_message_status"])
+	fmt.Println("message_id :", result["push_message_provider_message_id"])
+	fmt.Println("push_provider :", result["push_message_push_provider"])
+	fmt.Println("created_at :", result["push_message_created_at"])
+	fmt.Println("updated_at :", result["push_message_updated_at"])
+	fmt.Println("message_guid :", result["push_message_guid"])
 }
