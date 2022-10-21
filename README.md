@@ -1,6 +1,6 @@
 # Task_internship
 
-Dynamic JSON (important) : https://irshadhasmat.medium.com/golang-simple-json-parsing-using-empty-interface-and-without-struct-in-go-language-e56d0e69968
+(important)  Dynamic JSON Parsing in go : https://irshadhasmat.medium.com/golang-simple-json-parsing-using-empty-interface-and-without-struct-in-go-language-e56d0e69968
 
 Json : https://codezup.com/everything-about-encoding-decoding-json-data-golang/amp/
 
@@ -59,6 +59,11 @@ PostgreSQL :
 https://www.youtube.com/watch?v=qw--VYLpxG4  ( yt freecodecamp)
 
 to setup environment variables : https://linuxhint.com/connect-to-postgresql-database-command-line-windows/
+
+DynamoDB :
+https://stackoverflow.com/questions/62002279/resources-to-learn-dynamodb-query#:~:text=Here%20are%20some%20great%20resources%20that%20I%20gathered,DynamoDB%206%20AWS%20DynamoDB%207%20The%20DynamoDB%20Book
+
+differneces between sql and no-sql : https://www.andlearning.org/sql-vs-nosql/
 
 
 
