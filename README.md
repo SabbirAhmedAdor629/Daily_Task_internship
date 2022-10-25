@@ -1,6 +1,10 @@
 # Task_internship
 
+
+JSON :
 (important)  Dynamic JSON Parsing in go : https://irshadhasmat.medium.com/golang-simple-json-parsing-using-empty-interface-and-without-struct-in-go-language-e56d0e69968
+
+To improve efficinecy of code : https://www.codemio.com/2021/02/advanced-golang-tutorials-dynamic-json-parsing.html
 
 Json : https://codezup.com/everything-about-encoding-decoding-json-data-golang/amp/
 
