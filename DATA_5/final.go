@@ -124,6 +124,16 @@ func main() {
 	for k := range translationKeys {
 		fmt.Println(translationKeys[k])
 	}
+
+			// push-message
+	for _,item := range push_message {
+		for key := range item.(map[string]interface{}){
+			fmt.Println(key)
+		}
+		fmt.Println(" ")
+
+	}
+
 	for k2 := range translationKeys_bonus_message {
 		fmt.Println(translationKeys_bonus_message[k2])
 	}
@@ -139,5 +149,8 @@ func main() {
 		fmt.Printf("created_at : %v\n", item.(map[string]interface{})["created_at"])
 		fmt.Printf("status : %v\n", item.(map[string]interface{})["status"])
 	}
+
+	
+	
 
 }
