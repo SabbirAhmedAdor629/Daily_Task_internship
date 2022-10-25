@@ -102,14 +102,15 @@ func main() {
 	json.Unmarshal([]byte(empJson), &result)
 
 	message := result["message"].(map[string]interface{})
-	bonus_message := result["bonus_message"].(map[string]interface{})
 	push_message := result["push_messages"].([]interface{})
+	bonus_message := result["bonus_message"].(map[string]interface{})
 
+	// We need the keys
 	// Use make() to create the slice for better performance
 	translationKeys := make([]string, len(message))
 	translationKeys_bonus_message := make([]string, len(bonus_message))
 
-	// We only need the keys
+	
 	// keys of message
 	for key := range message {
 		translationKeys = append(translationKeys, key)
