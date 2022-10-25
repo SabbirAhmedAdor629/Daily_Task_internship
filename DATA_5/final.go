@@ -54,6 +54,28 @@ func main() {
 			"title": "Bonus time RIGHT now!!! ⏱",
 			"view_points" : 0
 		},
+
+		"push_messages":[
+			{
+
+				"status":"delivered",
+				"provider_message_id":"12312",
+				"push_provider": "aws::sn",
+				"created_at":"01-01-2022",
+				"updated_at":"01-01-2022",
+				"guid":"mb-b23cf415-5a5d-4e90-8def-a1c9c39ec246"
+			},
+			{
+
+				"status":"delivered",
+				"provider_message_id":"12312",
+				"push_provider": "aws::sn",
+				"created_at":"01-01-2022",
+				"updated_at":"01-01-2022",
+				"guid":"mb-b23cf415-5a5d-4e90-8def-a1c9c39ec246"
+			}
+    	],
+
 		"bonus_message":{
 
 			"bonus_guid" :"mb-b23cf415-5a5d-4e90-8def-a1c9c39ec246",
@@ -81,7 +103,7 @@ func main() {
 
 	message := result["message"].(map[string]interface{})
 	bonus_message := result["bonus_message"].(map[string]interface{})
-	//push_messages := result["push_messages"].(map[string]interface{})
+	push_message := result["push_messages"].([]interface{})
 
 	// Use make() to create the slice for better performance
 	translationKeys := make([]string, len(message))
@@ -109,6 +131,12 @@ func main() {
 	fmt.Println(
 		"\nGuid :", message["guid"],
 		"\nbonus_guid :", bonus_message["bonus_guid"],
+
 	)
+
+	for _,item:=range push_message {
+		fmt.Printf("created_at : %v\n", item.(map[string]interface{})["created_at"])
+		fmt.Printf("status : %v\n", item.(map[string]interface{})["status"])
+	}
 
 }
