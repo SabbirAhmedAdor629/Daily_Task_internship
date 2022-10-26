@@ -37,15 +37,12 @@
         "bonus_guid" : "bonus_message.bonus_guid",
         "awarded_points" : "bonus_message.awarded_points",
         "bonus_created_at" : "bonus_message.bonus_created_at",
-        
         "bonus_updated_at" : "bonus_message.bonus_updated_at",
         "bonus_template_id" : "bonus_message.bonus_template_id",
         "bonus_expires_at" : "bonus_message.bonus_expires_at",
-        
         "bonus_expires_in" : "bonus_message.bonus_expires_in",
         "bonus_awarded_at" : "bonus_message.bonus_awarded_at",
         "bonus_reward_title" : "bonus_message.bonus_reward_title",
-        
         "bonus_event_name" : "bonus_message.bonus_event_name",
         "bonus_event_count" : "bonus_message.bonus_event_count",
         "bonus_event_counter" : "bonus_message.bonus_event_counter",
