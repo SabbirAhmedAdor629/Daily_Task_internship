@@ -1,5 +1,12 @@
 # Task_internship
 
+Otahers helpful resources : 
+https://www.youtube.com/watch?v=76aORU14cyY&t=23s
+
+
+
+
+
 
 JSON :
 (important)  Dynamic JSON Parsing in go : https://irshadhasmat.medium.com/golang-simple-json-parsing-using-empty-interface-and-without-struct-in-go-language-e56d0e69968
