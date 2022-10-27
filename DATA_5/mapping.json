@@ -27,25 +27,22 @@
         "title" : "message.title",
         "view_points" : "message.view_points",
         
-        "push_message[].status": "push_message[].guid",
-        "push_message[].provider_message_id": "push_message[].provider_message_id",
-        "push_message[].push_provider": "push_message[].push_provider",
-        "push_message[].created_at": "push_message[].created_at",
-        "push_message[].updated_at": "push_message[].updated_at",
-        "push_message[].guid": "push_message[].guid",
+        "push_messages[].status": "push_messages[].status",
+        "push_messages[].provider_message_id": "push_messages[].provider_message_id",
+        "push_messages[].push_provider": "push_messages[].push_provider",
+        "push_messages[].created_at": "push_messages[].created_at",
+        "push_messages[].updated_at": "push_messages[].updated_at",
+        "push_messages[].guid": "push_messages[].guid",
 
         "bonus_guid" : "bonus_message.bonus_guid",
         "awarded_points" : "bonus_message.awarded_points",
         "bonus_created_at" : "bonus_message.bonus_created_at",
-        
         "bonus_updated_at" : "bonus_message.bonus_updated_at",
         "bonus_template_id" : "bonus_message.bonus_template_id",
         "bonus_expires_at" : "bonus_message.bonus_expires_at",
-        
         "bonus_expires_in" : "bonus_message.bonus_expires_in",
         "bonus_awarded_at" : "bonus_message.bonus_awarded_at",
         "bonus_reward_title" : "bonus_message.bonus_reward_title",
-        
         "bonus_event_name" : "bonus_message.bonus_event_name",
         "bonus_event_count" : "bonus_message.bonus_event_count",
         "bonus_event_counter" : "bonus_message.bonus_event_counter",
