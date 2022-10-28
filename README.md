@@ -3,6 +3,8 @@
 Otahers helpful resources : 
 https://www.youtube.com/watch?v=76aORU14cyY&t=23s
 
+https://bitfieldconsulting.com/golang
+
 
 
 
