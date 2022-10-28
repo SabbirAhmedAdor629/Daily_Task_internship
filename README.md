@@ -5,6 +5,10 @@ https://www.youtube.com/watch?v=76aORU14cyY&t=23s
 
 https://bitfieldconsulting.com/golang
 
+https://www.youtube.com/c/GopherAcademy/playlists
+
+Map Implementations : https://www.youtube.com/watch?v=Tl7mi9QmLns&list=PLEcwzBXTPUE8KvXRFmmfPEUmKoy9LfmAf&index=4
+
 
 
 
