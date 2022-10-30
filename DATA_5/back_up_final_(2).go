@@ -5,91 +5,76 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"strings"
 	//"strings"
 )
 
 func main() {
 
-			// Reading the mapping.json file and decoding
+	// Reading the mapping.json file and decoding
 	jsonFile, _ := os.Open("mapping.json")
 	defer jsonFile.Close()
 	byteValue, _ := ioutil.ReadAll(jsonFile)
 	var result_map map[string]interface{}
 	json.Unmarshal([]byte(byteValue), &result_map)
-			// Dynamically decoding every objects of mapping.json
-	mapping := map[string]map[string]interface{}{}
-	for k,v := range result_map{
-		switch c := v.(type){
-		case map[string]interface{}:
-			mapping[k] = v.(map[string]interface{})
-		default:
-			fmt.Printf("Not sure what type item %q is, but I think it might be %T\n", k, c)
-		}
-	}
+	// Have to decode mapping struct seperately
+	//mapping := result_map["mapping"].(map[string]interface{})
 
-			//Reading the data.json file and decoding
+	//Accessing values of mappping struct from mappping.json file
+	// for key := range mapping {
+	// 	fmt.Println(mapping[key])
+
+	// }
+
+	//Reading the data.json file and decoding
 	empJson, _ := os.Open("data.json")
 	defer empJson.Close()
 	byteValue_2, _ := ioutil.ReadAll(empJson)
 	var result map[string]interface{}
 	json.Unmarshal([]byte(byteValue_2), &result)
-			// Dynamically decoding every object of data.json
-	data := map[string]map[string]interface{}{}
+	// Have to decode three struct seperately
+	// message := result["message"].(map[string]interface{})
+	// push_message := result["push_messages"].([]interface{})
+	// bonus_message := result["bonus_message"].(map[string]interface{})
+
+	// Dynamically decoding every object of data.json
+	//A := []map[string]interface{}{}
+	data_2 := map[string]map[string]interface{}{}
+
 	for k, v := range result {
 		switch c := v.(type) {
 		case map[string]interface{}:
-			data[k] = v.(map[string]interface{})
+			//A = append(A, v.(map[string]interface{}))
+			data_2[k] = v.(map[string]interface{})
+			fmt.Println(data_2[k])
 		case []interface{}:
-			for _, item := range v.([]interface{}) {
-				data[k] = item.(map[string]interface{})
+			push_message := v.([]interface{})
+			for _, item := range push_message {
+				//A = append(A, item.(map[string]interface{}))
+				data_2[k] = item.(map[string]interface{})
+				fmt.Println(data_2[k])
 			}
 		default:
 			fmt.Printf("Not sure what type item %q is, but I think it might be %T\n", k, c)
 		}
 	}
 
-			//Accessing values from data.json file 
-	fmt.Println("GUID ", data["message"]["guid"])
-	fmt.Println("status ", data["push_messages"]["provider_message_id"])
-	fmt.Println("bonus_guid",data["bonus_message"]["bonus_guid"])
-	for v := range result{
-		for item := range data[v] {
-			fmt.Println("keys of data : ",item)
-			fmt.Println("Values : ",data[v][item])
-		}
-	}
+	// data_1 := map[string]interface{}{}
 
-			//Accessing keys and values from mapping.json file
-	fmt.Println(mapping["mapping"]["guid"])
-	for v := range result_map{
-		for item := range mapping[v] {
-			fmt.Println("keys : ",item)
-			fmt.Println("Values : ",mapping[v][item])
-		}
-	}
+	// data_1["message"] = "hafizul"
 
-			// Taking another map to output keys and values
-	CopiedMap:= make(map[string]interface{})
-	for v := range result_map{
-		for item := range mapping[v] {
+	fmt.Println("GUID ", data_2["message"]["guid"])
+	fmt.Printf("%s",data_2["message"]["player_id"])
 
-			value := (strings.Split(fmt.Sprint((mapping[v][item])),"."))
-			CopiedMap[item] = data[value[0]][value[1]]
-			fmt.Printf("%v : %v\n", item, CopiedMap[item])
-			fmt.Println(" ")
-			
-		}
-	}
-
-
-
-			//Spliting 
-	b := (strings.Split(fmt.Sprint((mapping["mapping"]["guid"])),"."))
-	fmt.Println(b[0])
-	fmt.Println(b[1])
 	
-	
+
+	//message := map[strng]interface{}
+
+	// message := A[0]
+	// fmt.Println(message["guid"])
+
+	// for i := range A[3]{
+	// 	fmt.Printf("%v : %v\n", i, A[3][i])
+	// }
 
 	// // We need the keys
 	// // Use make() to create the slice for better performance
