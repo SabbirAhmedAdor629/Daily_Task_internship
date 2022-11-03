@@ -1,5 +1,16 @@
 # Task_internship
 
+Protocol buffers :
+
+https://www.youtube.com/watch?v=7FZ6ZyzGex0 , 
+
+https://www.udemy.com/course/protocol-buffers/
+
+
+
+
+
+
 The Go Programming Language Specification : 
 
 https://go.dev/ref/spec
