@@ -1,5 +1,18 @@
 # Task_internship
 
+AWS Lambda :
+
+https://www.udemy.com/course/aws-serverless-a-complete-introduction/ ,
+
+https://www.geeksforgeeks.org/introduction-to-aws-lambda/ ,
+
+https://pmuens.medium.com/aws-fundamentals-what-is-lambda-32d17a89dda2 ,
+
+https://www.freecodecamp.org/news/code-and-deploy-a-serverless-api-using-go-and-aws/ ,
+
+ultimate guide :  https://medium.com/softkraft/aws-lambda-in-golang-the-ultimate-guide-4eec6c53149a , 
+
+
 Protocol buffers :
 
 https://www.youtube.com/watch?v=7FZ6ZyzGex0 , 
