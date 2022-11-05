@@ -2,6 +2,8 @@
 
 AWS Lambda :
 
+official documentation : https://docs.aws.amazon.com/lambda/?icmpid=docs_homepage_serverless
+
 https://www.udemy.com/course/aws-serverless-a-complete-introduction/ ,
 
 https://www.geeksforgeeks.org/introduction-to-aws-lambda/ ,
@@ -12,8 +14,9 @@ https://www.freecodecamp.org/news/code-and-deploy-a-serverless-api-using-go-and-
 
 ultimate guide :  https://medium.com/softkraft/aws-lambda-in-golang-the-ultimate-guide-4eec6c53149a , 
 
+very basic of aws : https://www.youtube.com/watch?v=k1RI5locZE4
 
-Protocol buffers :
+Protocol buffers : https://www.youtube.com/watch?v=k1RI5locZE4
 
 https://www.youtube.com/watch?v=7FZ6ZyzGex0 , 
 
