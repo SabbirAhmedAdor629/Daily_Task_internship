@@ -31,7 +31,7 @@ The Go Programming Language Specification :
 
 https://go.dev/ref/spec
 
-
+Yt : https://youtu.be/Czny2I2uGJA
 
 Otahers helpful resources : 
 https://www.youtube.com/watch?v=76aORU14cyY&t=23s
