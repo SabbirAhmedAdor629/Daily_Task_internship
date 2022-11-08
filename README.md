@@ -33,6 +33,8 @@ https://go.dev/ref/spec
 
 Yt : https://youtu.be/Czny2I2uGJA
 
+https://www.youtube.com/watch?v=MpFog2kZsHk
+
 Otahers helpful resources : 
 https://www.youtube.com/watch?v=76aORU14cyY&t=23s
 
