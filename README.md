@@ -2,6 +2,7 @@
 
 AWS Lambda :
 
+official learning resource : https://aws.amazon.com/lambda/getting-started/
 official documentation : https://docs.aws.amazon.com/lambda/?icmpid=docs_homepage_serverless
 
 https://www.udemy.com/course/aws-serverless-a-complete-introduction/ ,
