@@ -23,7 +23,8 @@ https://www.youtube.com/watch?v=7FZ6ZyzGex0 ,
 https://www.udemy.com/course/protocol-buffers/
 
 
-
+Handler : 
+https://perennialsky.medium.com/understand-handle-handler-and-handlefunc-in-go-e2c3c9ecef03
 
 
 
