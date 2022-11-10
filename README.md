@@ -2,6 +2,9 @@
 
 AWS Lambda :
 
+Getting started : https://aws.amazon.com/lambda/getting-started/
+
+
 official learning resource : https://aws.amazon.com/lambda/resources/?aws-lambda-resources-blog.sort-by=item.additionalFields.createdDate&aws-lambda-resources-blog.sort-order=desc
 
 official documentation : https://docs.aws.amazon.com/lambda/?icmpid=docs_homepage_serverless
