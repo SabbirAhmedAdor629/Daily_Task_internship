@@ -10,7 +10,7 @@ import (
 
 func TestAdd_Sub(t *testing.T){
 
-			//TESTING ADD FUNCTION ONLY
+	// 		//TESTING ADD FUNCTION ONLY
 	result := Add(1,3)
 	if result != 4{
 		t.Errorf("Add(1,3) failed, we expected %d and we get %d\n",4,result)
@@ -19,14 +19,14 @@ func TestAdd_Sub(t *testing.T){
 	}
 	
 
-			// TESTING MULTIPLE FUNCTIONS TOGETHER
-	// testData_add := []AddData{
+	// 		//TESTING MULTIPLE FUNCTIONS TOGETHER
+	// testData := []AddData {
 	// 	{3,5,8},
 	// 	{7,-4,3},
 	// 	{2,5,7},
 	// }
 
-	// for _, Datum := range(testData_add){
+	// for _, Datum := range(testData){
 	// 	result := Add(Datum.x,Datum.y)
 	// 	if(result != Datum.output){
 	// 		t.Errorf("Add failed, we expected %d and we get %d\n",Datum.output,result)

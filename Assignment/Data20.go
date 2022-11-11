@@ -37,7 +37,6 @@ func main() {
 		Type:       "Mothers Information",
 		Name:       "Begum",
 		Occupation: "Teacher",
-		Fav_colour: []string{"black", "green", "blue"},
 	}
 	
 	

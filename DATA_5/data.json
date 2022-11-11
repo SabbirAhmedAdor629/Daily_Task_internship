@@ -33,7 +33,7 @@
     "push_messages":[
         {
 
-            "status":"delivered",
+            "status":"not-delivered",
             "provider_message_id":"12312",
             "push_provider": "aws::sn",
             "created_at":"01-01-2022",
@@ -42,7 +42,7 @@
          },
          {
 
-            "status":"not-delivered",
+            "status":"delivered",
             "provider_message_id":"12312",
             "push_provider": "aws::sn",
             "created_at":"01-01-2022",

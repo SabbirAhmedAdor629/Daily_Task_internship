@@ -1,3 +1,3 @@
-module github.com/sabbir/go_practice/Unit_Testing/math2
+module custom_math2
 
 go 1.19

@@ -115,7 +115,7 @@ func main() {
 	// Unmarshal or Decode the JSON to the interface.
 	json.Unmarshal([]byte(empJson), &result)
 
-	push_messages := result["push_messages"].(map[string]interface{})
+	//push_messages := result["push_messages"].(map[string]interface{})
 
 
 
@@ -125,15 +125,15 @@ func main() {
 	
 
 
-	//Reading each value by its key
+	// //Reading each value by its key
 	
-	msg.PushMessageStatus = push_messages["status"]
+	// msg.PushMessageStatus = push_messages["status"]
 
-	msg.PushMessageProviderMessageID = push_messages["provider_message_id"]
-	msg.PushMessageProvider = push_messages["push_provider"]
-	msg.PushMessageCreatedAt = push_messages["created_at"]
-	msg.PushMessageUpdatedAt = push_messages["updated_at"]
-	msg.PushMessageGUID = push_messages["guid"]
+	// msg.PushMessageProviderMessageID = push_messages["provider_message_id"]
+	// msg.PushMessageProvider = push_messages["push_provider"]
+	// msg.PushMessageCreatedAt = push_messages["created_at"]
+	// msg.PushMessageUpdatedAt = push_messages["updated_at"]
+	// msg.PushMessageGUID = push_messages["guid"]
 
 	// pdata := DynamoInboxStoreItem{
 	// 	PushMessageStatus: push_messages["status"],
