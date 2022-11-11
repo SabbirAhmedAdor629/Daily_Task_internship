@@ -1,5 +1,49 @@
 # Task_internship
 
+AWS Lambda :
+
+Getting started : https://aws.amazon.com/lambda/getting-started/
+
+official learning resource : https://aws.amazon.com/lambda/resources/?aws-lambda-resources-blog.sort-by=item.additionalFields.createdDate&aws-lambda-resources-blog.sort-order=desc
+
+official documentation : https://docs.aws.amazon.com/lambda/?icmpid=docs_homepage_serverless
+
+Videos : https://serverlessland.com/video?services=AWS+Lambda
+
+Video playlists : https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11
+
+https://www.udemy.com/course/aws-serverless-a-complete-introduction/https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11 ,
+
+https://www.geeksforgeeks.org/introduction-to-aws-lambda/ ,
+
+https://pmuens.medium.com/aws-fundamentals-what-is-lambda-32d17a89dda2 ,
+
+https://www.freecodecamp.org/news/code-and-deploy-a-serverless-api-using-go-and-aws/ ,
+
+ultimate guide :  https://medium.com/softkraft/aws-lambda-in-golang-the-ultimate-guide-4eec6c53149a , 
+
+very basic of aws : https://www.youtube.com/watch?v=k1RI5locZE4
+
+Protocol buffers : https://www.youtube.com/watch?v=k1RI5locZE4
+
+https://www.youtube.com/watch?v=7FZ6ZyzGex0 , 
+
+https://www.udemy.com/course/protocol-buffers/
+
+
+Handler : 
+https://perennialsky.medium.com/understand-handle-handler-and-handlefunc-in-go-e2c3c9ecef03
+
+
+
+The Go Programming Language Specification : 
+
+https://go.dev/ref/spec
+
+Yt : https://youtu.be/Czny2I2uGJA
+
+https://www.youtube.com/watch?v=MpFog2kZsHk
+
 Otahers helpful resources : 
 https://www.youtube.com/watch?v=76aORU14cyY&t=23s
 
@@ -7,7 +51,15 @@ https://bitfieldconsulting.com/golang
 
 https://www.youtube.com/c/GopherAcademy/playlists
 
-Map Implementations : https://www.youtube.com/watch?v=Tl7mi9QmLns&list=PLEcwzBXTPUE8KvXRFmmfPEUmKoy9LfmAf&index=4
+
+
+
+
+Map Implementations : 
+
+https://www.youtube.com/watch?v=Tl7mi9QmLns&list=PLEcwzBXTPUE8KvXRFmmfPEUmKoy9LfmAf&index=4 ,
+
+map types : https://go.dev/ref/spec#Map_types
 
 
 
