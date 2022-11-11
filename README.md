@@ -10,7 +10,9 @@ official documentation : https://docs.aws.amazon.com/lambda/?icmpid=docs_homepag
 
 Videos : https://serverlessland.com/video?services=AWS+Lambda
 
-https://www.udemy.com/course/aws-serverless-a-complete-introduction/ ,
+Video playlists : https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11
+
+https://www.udemy.com/course/aws-serverless-a-complete-introduction/https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11 ,
 
 https://www.geeksforgeeks.org/introduction-to-aws-lambda/ ,
 
