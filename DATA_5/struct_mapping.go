@@ -43,9 +43,7 @@ type MESSAGE struct {
 type Push struct{
 	Status            string `json:"push_message_status"`
    	ProviderMessageID string `json:"push_message_provider_message_id"`
-   	Provider          string `json:"push_message_pr
-	
-	ovider"`
+   	Provider          string `json:"push_message_provider"`
    	CreatedAt         string `json:"push_message_created_at"`
    	UpdatedAt         string `json:"push_message_updated_at"`
    	GUID              string `json:"push_message_guid"`

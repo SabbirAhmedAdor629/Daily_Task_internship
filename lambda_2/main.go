@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"fmt"
 	"log"
 
@@ -9,14 +8,20 @@ import (
 )
 
 type MyEvent struct {
-        Name string `json:"name"`
+        Name string `json:"What is your name?"`
+        Age int     `json:"How old are you?"`
 }
-
-func HandleRequest(ctx context.Context, name MyEvent) {
-		name.Name = "Sabbir"
-        log.Println(fmt.Sprintf("Hello %s!", name.Name))
-	}
-
+ 
+type MyResponse struct {
+        Message string `json:"Answer:"`
+}
+ 
+func HandleLambdaEvent(event MyEvent) (MyResponse, error) {
+	obj := MyResponse{Message: fmt.Sprintf("%s is %d years old!", event.Name, event.Age)}
+	log.Println(obj)
+	return obj, nil
+}
+ 
 func main() {
-        lambda.Start(HandleRequest)
+        lambda.Start(HandleLambdaEvent)
 }
