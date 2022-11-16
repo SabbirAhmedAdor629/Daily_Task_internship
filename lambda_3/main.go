@@ -1,5 +1,6 @@
 package main
 
+
 import (
 	"encoding/json"
 	"fmt"
@@ -23,6 +24,7 @@ type Data struct {
 	ComponentParams         string      `json:"component_params"`
 	CreatedAt               string      `json:"created_at"`
 	UpdatedAt    			string      `json:"updated_at"`
+	ViewedAt				string		`json:"viewd_at"`
 	Goto                    string      `json:"goto"`
 	Image                   string      `json:"image"`
 	MemberID                string      `json:"member_id"`
@@ -37,30 +39,27 @@ type Data struct {
 }
 
 
-
-
 type Push struct{
-	Status            	string `json:"status"`
-	ProviderMessageId 	string `json:"provider_message_id"`
-	PushProvider        string `json:"push_provider"`
-	CreatedAt         	string `json:"created_at"`
-	UpdatedAt         	string `json:"updated_at"`
-	MessageGuid         string `json:"message_guid"`
-	Guid				string `json:"guid"`
-	DeviceId  			string `json:"device_id"`
-	AwsMessageId  		string `json:"aws_message_id"`
-	AwsArnStatus  		string `json:"aws_arn_status"`
+	Status            	string 		`json:"status"`
+	ProviderMessageId 	string 		`json:"provider_message_id"`
+	PushProvider        string 		`json:"push_provider"`
+	CreatedAt         	string 		`json:"created_at"`
+	UpdatedAt         	string 		`json:"updated_at"`
+	MessageGuid         string 		`json:"message_guid"`
+	Guid				string 		`json:"guid"`
+	DeviceId  			string 		`json:"device_id"`
+	AwsMessageId  		string 		`json:"aws_message_id"`
+	AwsArnStatus  		string 		`json:"aws_arn_status"`
 }
 
 
 
 type SQSPushInboxLambdaPayload struct{
+	Origin			string		`json:"origin"`
+	Operation 		string		`json:"operation"`
+	TransactionID 	string		`json:"transaction_id"`
+	SubmittedTs 	string		`json:"submitted_ts"`
 
-	Origin string			`json:"origin"`
-	Operation string		`json:"operation"`
-	TransactionID string	`json:"transaction_id"`
-	SubmittedTs string		`json:"submitted_ts"`
-	
 	Data Data					`json:"data"`
 	PushMessages []Push			`json:"push_messages"`
 	
@@ -80,31 +79,16 @@ type SQSPushInboxLambdaPayload struct{
 	BonusType		string      `json:"bonus_type"`
 }
 
-
-
-// type LambdaEvent struct {
-// 	Name string `json:"name"`
-// 	Age int `json:"age"`
-// }
-
-
-// type LambdaResponse struct {
-// 	Message string `json:"message"`
-// }
-
-
 func LambdaHandler(event SQSPushInboxLambdaPayload) (string, error) {
-	return fmt.Sprintf(
-		"Origin : %s SkipInbox : %s BonusGuid : %s",event.Origin, event.Data.GUID,event.BonusGuid,
-		), nil
 	
+	return fmt.Sprintf(
+		"Origin : %s   Guid  : %s ",event.Origin, event.Data.GUID,
+		), nil
 }
-
 
 
 func main ()  {
 	lambda.Start(LambdaHandler)
-	
 }
 
 				// ACCESSING VALUES OF EVERY OBJECTS IN THE ARRAY OF STRUCT
