@@ -54,7 +54,6 @@ func getDyanmicMappingStruct(mappingData map[string]interface{}, jsonData map[st
 				if !ok {
 					return fmt.Errorf("Json array []interface conversion error"), nil
 				}
-
 				if _, ok := dynamoItemStruct[structKyeFirst]; !ok {
 					dynamoItemStruct[structKyeFirst] = []map[string]interface{}{}
 					// assigned empty map array

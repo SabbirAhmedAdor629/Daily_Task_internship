@@ -1,9 +1,10 @@
 package main
 
-
 import (
 	"encoding/json"
 	"fmt"
+	"log"
+
 	"github.com/aws/aws-lambda-go/lambda"
 )
 
@@ -81,9 +82,23 @@ type SQSPushInboxLambdaPayload struct{
 
 func LambdaHandler(event SQSPushInboxLambdaPayload) (string, error) {
 	
-	return fmt.Sprintf(
-		"Origin : %s   Guid  : %s ",event.Origin, event.Data.GUID,
-		), nil
+
+	log.Println("Origin : ",event.Origin)
+	log.Println("Operation : ",event.Operation)
+	log.Println("TransactionID : ",event.TransactionID)
+	log.Println("SubmittedTs : ",event.SubmittedTs)
+
+	for i=0; i<=event.PushMessages; i++{
+		for j=0; j<=event.PushMessages[i]; j++{
+			log.Println(event.PushMessages[])
+		}
+	}
+
+
+	// return fmt.Sprintf(
+	// 	"Data : %s", event,
+	// 	//"Origin :	%s   Guid  : %s		status : %s	",event.Origin, event.Data.GUID, event.PushMessages[0].Status, 
+	// 	), nil
 }
 
 

@@ -18,7 +18,7 @@ type MyResponse struct {
  
 func HandleLambdaEvent(event MyEvent) (MyResponse, error) {
 	obj := MyResponse{Message: fmt.Sprintf("%s is %d years old!", event.Name, event.Age)}
-	log.Println(obj)
+	log.Println("Data is : ",obj)
 	return obj, nil
 }
  
