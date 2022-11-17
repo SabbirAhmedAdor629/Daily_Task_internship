@@ -53,6 +53,10 @@ https://www.youtube.com/c/GopherAcademy/playlists
 
 
 
+Golang Advance tutorial : 
+
+https://golangbyexample.com/golang-comprehensive-tutorial/#Creational_Design_Patterns
+https://www.golangprograms.com/golang/interface-type/
 
 
 Map Implementations : 
