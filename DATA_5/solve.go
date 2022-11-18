@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -26,17 +25,13 @@ func main() {
 	json.Unmarshal([]byte(byteValue_2), &result)
 
 	error, CopiedMap := getDyanmicMappingStruct(result_map, result)
-	if error == nil{
-		for key := range CopiedMap{
-			fmt.Printf(" %v : %v\n", key, CopiedMap[key] )
+	if error == nil {
+		for key := range CopiedMap {
+			fmt.Printf(" %v : %v\n", key, CopiedMap[key])
 		}
 	}
 
-	
-				
 }
-
-
 
 func getDyanmicMappingStruct(mappingData map[string]interface{}, jsonData map[string]interface{}) (error, map[string]interface{}) {
 	dynamoItemStruct := make(map[string]interface{})
