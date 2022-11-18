@@ -1,5 +1,13 @@
 # Task_internship
 
+
+VS Code : 
+
+https://code.visualstudio.com/Docs/editor/debugging#:~:text=To%20run%20or%20debug%20a%20simple%20app%20in,you%20to%20configure%20and%20save%20debugging%20setup%20details.
+
+https://www.youtube.com/watch?v=ORrELERGIHs
+
+
 AWS Lambda :
 
 Getting started : https://aws.amazon.com/lambda/getting-started/
