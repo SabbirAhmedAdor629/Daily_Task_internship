@@ -3,6 +3,8 @@
 
 Testing : 
 
+docs : https://pkg.go.dev/testing#T
+
 t.run example : https://golang.hotexamples.com/examples/testing/T/Run/golang-t-run-method-examples.html
 
 
