@@ -3,6 +3,10 @@
 
 Testing : 
 
+docs : https://pkg.go.dev/testing#T
+
+medium article : https://medium.com/gophers-lab/how-to-write-and-run-tests-in-golang-bcbd71f0cf84
+
 t.run example : https://golang.hotexamples.com/examples/testing/T/Run/golang-t-run-method-examples.html
 
 
