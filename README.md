@@ -3,13 +3,26 @@
 
 POSTGRESql: 
 
-install and checking versions : https://www.postgresql.org/download/linux/ubuntu/, 
+Install and Checking versions : https://www.postgresql.org/download/linux/ubuntu/, 
 https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/ , 
 https://www.systranbox.com/how-to-check-postgres-installed-or-not-in-linux/#:~:text=To%20check%20if%20you%20have%20Postgres%20installed%20on,you%20can%20download%20it%20from%20the%20Postgres%20website.
 
-resource : https://golangdocs.com/golang-postgresql-example
+Commands : https://www.geeksforgeeks.org/postgresql-psql-commands/, https://www.postgresql.org/docs/current/app-psql.html, 
+https://www.postgresqltutorial.com/wp-content/uploads/2018/03/PostgreSQL-Cheat-Sheet.pdf , 
+
+Resource : https://golangdocs.com/golang-postgresql-example ,
+https://medium.com/murabito/connecting-postgres-with-go-language-golang-89ff16746851 ,
+https://hevodata.com/learn/golang-postgres/#pre ,
+https://medium.com/swlh/building-a-restful-api-with-go-and-postgresql-494819f51810 ,
 
 
+Youtube : 
+https://www.youtube.com/watch?v=vNgxS8dSEtY
+Task : https://www.youtube.com/watch?v=GiT0Dm8l_Ts
+
+Errors : 
+https://stackoverflow.com/questions/69676009/psql-error-connection-to-server-on-socket-var-run-postgresql-s-pgsql-5432 ,
+https://stackoverflow.com/questions/52273106/error-syntax-error-at-or-near-at-create-table ,
 
 
 
