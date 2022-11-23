@@ -1,0 +1,5 @@
+ action: "campaign_messaging_orchestrator", 
+  submitted_at: 2022-10-19 17:57:41 -0700, 
+  data: { s3_file: "production/targeting_extracts/Campaign-1118-23-2022-10-19T23:12:45Z/1", 
+          campaign_id: 1118, 
+          log_chunk_id: 1}}
