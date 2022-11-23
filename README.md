@@ -1,6 +1,18 @@
 # Task_internship
 
 
+POSTGRESql: 
+
+install and checking versions : https://www.postgresql.org/download/linux/ubuntu/, 
+https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/ , 
+https://www.systranbox.com/how-to-check-postgres-installed-or-not-in-linux/#:~:text=To%20check%20if%20you%20have%20Postgres%20installed%20on,you%20can%20download%20it%20from%20the%20Postgres%20website.
+
+resource : https://golangdocs.com/golang-postgresql-example
+
+
+
+
+
 GoLang : 
 
 Interface and methods : https://www.youtube.com/watch?v=lbW-KVdIXaY,
