@@ -25,8 +25,7 @@ type Message struct {
 	CallToActionPoints      json.Number    `json:"call_to_action_points"`
 	CompletedAt             string         `json:"completed_at"`
 	CompleteOnCallToAction  string         `json:"complete_on_call_to_action"`
-	Component               string         `json:"component"`
-	ComponentParams         string         `json:"component_params"`
+	ComposqsPushPayloadonentParams         string         `json:"component_params"`
 	CreatedAt               string         `json:"created_at"`
 	UpdatedAt               string         `json:"updated_at"`
 	ViewedAt                string         `json:"viewed_at"`
@@ -131,3 +130,7 @@ func createSNSMessage(sqsPushPayload SQSPushLambdaPayload, pushMessagesIndex int
 
 	return push_params
 }
+
+
+
+

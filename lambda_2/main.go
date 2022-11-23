@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"strings"
 
 	"github.com/aws/aws-lambda-go/lambda"
 )
@@ -15,6 +16,7 @@ type MyEvent struct {
 type MyResponse struct {
         Message string `json:"Answer:"`
 }
+
  
 func HandleLambdaEvent(event MyEvent) (MyResponse, error) {
 	obj := MyResponse{Message: fmt.Sprintf("%s is %d years old!", event.Name, event.Age)}
@@ -24,4 +26,5 @@ func HandleLambdaEvent(event MyEvent) (MyResponse, error) {
  
 func main() {
         lambda.Start(HandleLambdaEvent)
+
 }
