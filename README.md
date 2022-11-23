@@ -1,6 +1,13 @@
 # Task_internship
 
 
+GoLang : 
+
+Interface and methods : https://www.youtube.com/watch?v=lbW-KVdIXaY,
+
+
+
+
 Testing : 
 
 docs : https://pkg.go.dev/testing#T
