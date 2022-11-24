@@ -42,7 +42,6 @@ Interface and methods : https://www.youtube.com/watch?v=lbW-KVdIXaY,
 Resources : 
 
 Youtube Channels :
-
 Programming from A to Z : https://www.youtube.com/channel/UC96-I7pVBHXvKuGqhQTJkYQ/playlists
 
 
