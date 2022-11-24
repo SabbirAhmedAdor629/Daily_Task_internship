@@ -10,10 +10,13 @@ https://www.systranbox.com/how-to-check-postgres-installed-or-not-in-linux/#:~:t
 Commands : https://www.geeksforgeeks.org/postgresql-psql-commands/, https://www.postgresql.org/docs/current/app-psql.html, 
 https://www.postgresqltutorial.com/wp-content/uploads/2018/03/PostgreSQL-Cheat-Sheet.pdf , 
 
-Resource : https://golangdocs.com/golang-postgresql-example ,
+Resource : 
+
+https://golangdocs.com/golang-postgresql-example ,
 https://medium.com/murabito/connecting-postgres-with-go-language-golang-89ff16746851 ,
 https://hevodata.com/learn/golang-postgres/#pre ,
 https://medium.com/swlh/building-a-restful-api-with-go-and-postgresql-494819f51810 ,
+Documentation : https://www.postgresql.org/docs/current/datatype.html ,
 
 
 Youtube : 
@@ -33,7 +36,7 @@ Show all the tables in the database :
 https://devdojo.com/bobbyiliev/how-to-show-all-tables-in-postgresql#:~:text=How%20to%20show%20all%20tables%20in%20PostgreSQL%3F%201,in%20the%20database%2C%20run%20the%20following%20command%3A%20
 
 
-GoLang : 
+GOLANG : 
 
 Interface and methods : https://www.youtube.com/watch?v=lbW-KVdIXaY,
 
