@@ -18,7 +18,8 @@ https://medium.com/swlh/building-a-restful-api-with-go-and-postgresql-494819f518
 
 Youtube : 
 https://www.youtube.com/watch?v=vNgxS8dSEtY
-Task : https://www.youtube.com/watch?v=GiT0Dm8l_Ts
+
+Get start with postgres : https://www.youtube.com/watch?v=GiT0Dm8l_Ts
 
 Errors : 
 https://stackoverflow.com/questions/69676009/psql-error-connection-to-server-on-socket-var-run-postgresql-s-pgsql-5432 ,
