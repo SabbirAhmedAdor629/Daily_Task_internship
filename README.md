@@ -22,7 +22,6 @@ Documentation : https://www.postgresql.org/docs/current/datatype.html ,
 Youtube : 
 
 https://www.youtube.com/watch?v=vNgxS8dSEtY
-
 Get start with postgres : https://www.youtube.com/watch?v=GiT0Dm8l_Ts
 
 Errors : 
