@@ -17,6 +17,7 @@ https://medium.com/swlh/building-a-restful-api-with-go-and-postgresql-494819f518
 
 
 Youtube : 
+
 https://www.youtube.com/watch?v=vNgxS8dSEtY
 
 Get start with postgres : https://www.youtube.com/watch?v=GiT0Dm8l_Ts
@@ -25,6 +26,11 @@ Errors :
 https://stackoverflow.com/questions/69676009/psql-error-connection-to-server-on-socket-var-run-postgresql-s-pgsql-5432 ,
 https://stackoverflow.com/questions/52273106/error-syntax-error-at-or-near-at-create-table ,
 
+
+Others :
+
+Show all the tables in the database : 
+https://devdojo.com/bobbyiliev/how-to-show-all-tables-in-postgresql#:~:text=How%20to%20show%20all%20tables%20in%20PostgreSQL%3F%201,in%20the%20database%2C%20run%20the%20following%20command%3A%20
 
 
 GoLang : 
