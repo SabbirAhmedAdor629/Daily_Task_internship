@@ -18,10 +18,11 @@ https://www.systranbox.com/how-to-check-postgres-installed-or-not-in-linux/#:~:t
 
 Commands : https://www.geeksforgeeks.org/postgresql-psql-commands/, https://www.postgresql.org/docs/current/app-psql.html, 
 https://www.postgresqltutorial.com/wp-content/uploads/2018/03/PostgreSQL-Cheat-Sheet.pdf , 
+Postgresql on VS-Code : https://www.youtube.com/watch?v=ezjoDYs72GA
 
 Resource : 
 
-https://golangdocs.com/golang-postgresql-example ,
+Golang Docs : https://golangdocs.com/golang-postgresql-example ,
 https://medium.com/murabito/connecting-postgres-with-go-language-golang-89ff16746851 ,
 https://hevodata.com/learn/golang-postgres/#pre ,
 https://medium.com/swlh/building-a-restful-api-with-go-and-postgresql-494819f51810 ,
