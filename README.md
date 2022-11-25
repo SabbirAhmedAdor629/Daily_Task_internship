@@ -6,6 +6,7 @@
 POSTGRESql: 
 
 Basics :
+
 What is database : https://www.oracle.com/database/what-is-database/ ,  
 Relational Databases : https://www.ibm.com/cloud/learn/relational-databases , 
 How relational database work : http://coding-geek.com/how-databases-work/ ,
