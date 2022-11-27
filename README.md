@@ -1,10 +1,54 @@
 # Task_internship
 
 
-GoLang : 
+
+
+POSTGRESql: 
+
+Basics :
+
+What is database : https://www.oracle.com/database/what-is-database/ ,  
+Relational Databases : https://www.ibm.com/cloud/learn/relational-databases , 
+How relational database work : http://coding-geek.com/how-databases-work/ ,
+
+
+Install and Checking versions : https://www.postgresql.org/download/linux/ubuntu/, 
+https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/ , 
+https://www.systranbox.com/how-to-check-postgres-installed-or-not-in-linux/#:~:text=To%20check%20if%20you%20have%20Postgres%20installed%20on,you%20can%20download%20it%20from%20the%20Postgres%20website.
+
+Commands : https://www.geeksforgeeks.org/postgresql-psql-commands/, https://www.postgresql.org/docs/current/app-psql.html, 
+https://www.postgresqltutorial.com/wp-content/uploads/2018/03/PostgreSQL-Cheat-Sheet.pdf , 
+Postgresql on VS-Code : https://www.youtube.com/watch?v=ezjoDYs72GA
+
+Resource : 
+
+Golang Docs : https://golangdocs.com/golang-postgresql-example ,
+https://medium.com/murabito/connecting-postgres-with-go-language-golang-89ff16746851 ,
+https://hevodata.com/learn/golang-postgres/#pre ,
+https://medium.com/swlh/building-a-restful-api-with-go-and-postgresql-494819f51810 ,
+Documentation : https://www.postgresql.org/docs/current/datatype.html , 
+Go+PostgreSQL : https://www.youtube.com/watch?v=vNgxS8dSEtY&list=PLrIUdOr407RPpl6cOWCz8Tk_XKBDyJNht&index=20
+Get start with postgres : https://www.youtube.com/watch?v=GiT0Dm8l_Ts
+
+Errors : 
+https://stackoverflow.com/questions/69676009/psql-error-connection-to-server-on-socket-var-run-postgresql-s-pgsql-5432 ,
+https://stackoverflow.com/questions/52273106/error-syntax-error-at-or-near-at-create-table ,
+password_authentication_error : https://www.youtube.com/watch?v=DsmyMmI5baE&t=214s
+
+Others :
+
+Show all the tables in the database : 
+https://devdojo.com/bobbyiliev/how-to-show-all-tables-in-postgresql#:~:text=How%20to%20show%20all%20tables%20in%20PostgreSQL%3F%201,in%20the%20database%2C%20run%20the%20following%20command%3A%20
+
+
+GOLANG : 
 
 Interface and methods : https://www.youtube.com/watch?v=lbW-KVdIXaY,
 
+Resources : 
+
+Youtube Channels :
+Programming from A to Z : https://www.youtube.com/channel/UC96-I7pVBHXvKuGqhQTJkYQ/playlists
 
 
 
