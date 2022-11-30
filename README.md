@@ -31,9 +31,16 @@ Documentation : https://www.postgresql.org/docs/current/datatype.html ,
 Get start with postgres : https://www.youtube.com/watch?v=GiT0Dm8l_Ts
 
 Errors : 
+
 https://stackoverflow.com/questions/69676009/psql-error-connection-to-server-on-socket-var-run-postgresql-s-pgsql-5432 ,
 https://stackoverflow.com/questions/52273106/error-syntax-error-at-or-near-at-create-table ,
 password_authentication_error : https://www.youtube.com/watch?v=DsmyMmI5baE&t=214s
+
+
+Attacks : 
+
+SQL injection and XSS attacks : https://medium.com/@skavhar1998/thwart-sql-injections-and-xss-attacks-with-golang-examples-8fdd11900d02
+
 
 Others :
 
