@@ -27,7 +27,7 @@ https://medium.com/murabito/connecting-postgres-with-go-language-golang-89ff1674
 https://hevodata.com/learn/golang-postgres/#pre ,
 https://medium.com/swlh/building-a-restful-api-with-go-and-postgresql-494819f51810 ,
 Documentation : https://www.postgresql.org/docs/current/datatype.html , 
-Go+PostgreSQL : https://www.youtube.com/watch?v=vNgxS8dSEtY&list=PLrIUdOr407RPpl6cOWCz8Tk_XKBDyJNht&index=20
+( Go+PostgreSQL : https://www.youtube.com/watch?v=vNgxS8dSEtY&list=PLrIUdOr407RPpl6cOWCz8Tk_XKBDyJNht&index=20 )
 Get start with postgres : https://www.youtube.com/watch?v=GiT0Dm8l_Ts
 
 Errors : 
