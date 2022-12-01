@@ -27,19 +27,27 @@ https://medium.com/murabito/connecting-postgres-with-go-language-golang-89ff1674
 https://hevodata.com/learn/golang-postgres/#pre ,
 https://medium.com/swlh/building-a-restful-api-with-go-and-postgresql-494819f51810 ,
 Documentation : https://www.postgresql.org/docs/current/datatype.html , 
-Go+PostgreSQL : https://www.youtube.com/watch?v=vNgxS8dSEtY&list=PLrIUdOr407RPpl6cOWCz8Tk_XKBDyJNht&index=20
+( Go+PostgreSQL : https://www.youtube.com/watch?v=vNgxS8dSEtY&list=PLrIUdOr407RPpl6cOWCz8Tk_XKBDyJNht&index=20 )
 Get start with postgres : https://www.youtube.com/watch?v=GiT0Dm8l_Ts
 
 Errors : 
+
 https://stackoverflow.com/questions/69676009/psql-error-connection-to-server-on-socket-var-run-postgresql-s-pgsql-5432 ,
 https://stackoverflow.com/questions/52273106/error-syntax-error-at-or-near-at-create-table ,
 password_authentication_error : https://www.youtube.com/watch?v=DsmyMmI5baE&t=214s
+
+
+Attacks : 
+
+SQL injection and XSS attacks : https://medium.com/@skavhar1998/thwart-sql-injections-and-xss-attacks-with-golang-examples-8fdd11900d02
+
 
 Others :
 
 Show all the tables in the database : 
 https://devdojo.com/bobbyiliev/how-to-show-all-tables-in-postgresql#:~:text=How%20to%20show%20all%20tables%20in%20PostgreSQL%3F%201,in%20the%20database%2C%20run%20the%20following%20command%3A%20
-
+Types of memories in computer : https://www.c-sharpcorner.com/article/stack-vs-heap-memory-c-sharp/#:~:text=This%20is%20for%20both%20beginners%20and%20professional%20C%23,allocated%20to%20store%20certain%20kinds%20of%20data%20objects.
+Computer Memory : https://www.geeksforgeeks.org/computer-memory/
 
 GOLANG : 
 
