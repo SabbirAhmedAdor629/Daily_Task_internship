@@ -92,6 +92,7 @@ func main() {
 	// err = db.Ping()
 	// CheckError(err)
 	// fmt.Println("Connected!")
+	// kdfjlskdfjlaskjdf
 }
 
 func CheckError(err error) {
