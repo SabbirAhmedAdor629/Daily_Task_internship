@@ -26,7 +26,7 @@ func main() {
 	defer db.Close()
 
 
-	// 		// Query
+						// Query
 	// rows, err := db.Query(`SELECT "campaign_execution_log_id", "status" FROM "campaign_execution_log_chunks"`)
 	// CheckError(err)
 	
@@ -42,18 +42,18 @@ func main() {
 	// }
 	// CheckError(err)
 
-	    // Delete
+	    			// Delete
 	// deleteStmt := `delete from "students" where std_id=$1`
 	// _, e := db.Exec(deleteStmt, 4)
 	// CheckError(e)
 
-			// Update
+						// Update
 	// updateStmt := `UPDATE "campaign_execution_log_chunks" SET "campaign_id"=$1, "status"=$2 WHERE "id"=$3`
 	// _, e := db.Exec(updateStmt, 514, "will be updated", 6)
 	// CheckError(e)
 
 	
-	// Insertion
+						// Insertion
 	//  // insert
 	// insertStmt := `insert into "students"("std_id", "std_name", "std_program", "std_stream") values(4, 'Samin', 'School', 'Primary')`
 	// _, e := db.Exec(insertStmt)
@@ -72,6 +72,22 @@ func main() {
 	// CheckError(err)
 	// fmt.Println("Connected!")
 }
+
+				// CHECKING NULL VALUES
+// func CheckNUllValue(key_1 int, tableName string){
+// 	rows,err := db.Query(`SELECT "key_1" FROM "tableName"`);
+// 	CheckError(err)
+// 	for rows.Next() {
+// 		var max_account *int
+// 		err := rows.Scan(&max_account); 
+// 		CheckError(err)
+// 		if max_account == nil {
+// 			fmt.Println("max_account is nil")
+// 		}else{
+// 			fmt.Println(*max_account);
+// 		}
+// 	}
+// }
 
 func CheckError(err error) {
 	if err != nil {
