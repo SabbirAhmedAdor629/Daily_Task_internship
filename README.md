@@ -3,6 +3,24 @@
 
 
 
+
+1 December : 
+
+https://stackoverflow.com/questions/23415612/insert-datetime-using-now-with-go ,
+
+Unit Testing : 
+https://dev.to/techschoolguru/write-go-unit-tests-for-db-crud-with-random-data-53no ,
+https://medium.easyread.co/unit-test-sql-in-golang-5af19075e68e ,
+https://mayursinhsarvaiya.medium.com/how-to-mock-postgresql-database-for-unit-testing-in-golang-gorm-b690a4e4bc85 ,
+https://medium.com/geekculture/easily-run-your-unit-test-with-golang-gin-postgres-8a402a29e3f6 , 
+https://betterprogramming.pub/easy-guide-to-unit-testing-in-golang-4fc1e9d96679 , 
+
+Separate CRUD operations using function : https://www.linkedin.com/pulse/crud-operations-using-golang-postgresql-lucky-kumar/ , 
+
+https://stackoverflow.com/questions/47758359/how-to-store-golang-time-time-in-postgresql-timestamp ,
+
+---------------------------------------------------------------------------------------------------------------------
+
 POSTGRESql: 
 
 Basics :
