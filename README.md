@@ -1,8 +1,18 @@
 # Task_internship
 
+2 December
+
+on conflict do nothing : https://dickyaryakesuma.medium.com/how-to-use-on-conflict-clause-in-postgresql-e4c43200646c#:~:text=ON%20CONFLICT%20CLAUSE%20is%20introduced%20to%20PostgreSQL%20to,or%20the%20constraint%20name%20or%20a%20WHERE%20clause. , 
+https://www.executeprogram.com/courses/sql/lessons/on-conflict-do-nothing
+
+iota : https://golangbyexample.com/iota-in-golang/#:~:text=IOTA%20in%20Go%20%28Golang%29%20Overview.%20Iota%20is%20an,Enum%20in%20Golang.%20IOTA%20provides%20an%20automated%20
 
 
+Explanation of code : Denigma
+Design db and generate code : DbDiagram
 
+
+---------------------------------------------------------------------------------
 
 1 December : 
 
