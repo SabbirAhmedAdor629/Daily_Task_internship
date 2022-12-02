@@ -62,6 +62,7 @@ SQL injection and XSS attacks : https://medium.com/@skavhar1998/thwart-sql-injec
 
 Others :
 
+( A good site to sharpen up sql basics : https://www.executeprogram.com/courses/sql ),
 Show all the tables in the database : 
 https://devdojo.com/bobbyiliev/how-to-show-all-tables-in-postgresql#:~:text=How%20to%20show%20all%20tables%20in%20PostgreSQL%3F%201,in%20the%20database%2C%20run%20the%20following%20command%3A%20
 Types of memories in computer : https://www.c-sharpcorner.com/article/stack-vs-heap-memory-c-sharp/#:~:text=This%20is%20for%20both%20beginners%20and%20professional%20C%23,allocated%20to%20store%20certain%20kinds%20of%20data%20objects.
