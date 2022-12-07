@@ -41,27 +41,29 @@ const (
 
 
 func InsertIntoCategories(db *sql.DB){
-	var Id int
-	var Name string
-	var Description string
-	var Parent_category_id int
-	var Priority int
-	var Can_opt_out bool
-	Created_at := time.Now()
-	Updated_at := time.Now()
-
-	fmt.Println("Enter id : ")
-	fmt.Scan(&Id)
-	fmt.Println("Enter name : ")
-	fmt.Scan(&Name)
-	fmt.Println("Enter description : ")
-	fmt.Scan(&Description)
-	fmt.Println("Enter parent_catagory_id : ")
-	fmt.Scan(&Parent_category_id)
-	fmt.Println("Enter priority: ")
-	fmt.Scan(&Priority)	
-	fmt.Println("Enter can_opt_out: ")
-	fmt.Scan(&Can_opt_out)
+	// var Id int
+	// var Name string
+	// var Description string
+	// var Parent_category_id int
+	// var Priority int
+	// var Can_opt_out bool
+	
+	StartAt := time.Now()
+	EndAt := time.Now()
+	CreatedAt := time.Now()
+	UpdatedAt := time.Now()
+	// fmt.Println("Enter id : ")
+	// fmt.Scan(&Id)
+	// fmt.Println("Enter name : ")
+	// fmt.Scan(&Name)
+	// fmt.Println("Enter description : ")
+	// fmt.Scan(&Description)
+	// fmt.Println("Enter parent_catagory_id : ")
+	// fmt.Scan(&Parent_category_id)
+	// fmt.Println("Enter priority: ")
+	// fmt.Scan(&Priority)	
+	// fmt.Println("Enter can_opt_out: ")
+	// fmt.Scan(&Can_opt_out)
 
 
 // 	email, loginTime := "human@example.com", time.Now()
@@ -70,13 +72,19 @@ func InsertIntoCategories(db *sql.DB){
 //   panic(err)
 // }
 
-	_, err := db.Exec("INSERT INTO categories VALUES ($1,$2,$3,$4,$5,$6,$7,$8)",Id, Name, Description, 
-	Parent_category_id, Priority, Can_opt_out, 
-	Created_at, Updated_at )
+// insertTableAdId :=
+// 				`INSERT INTO ` + env.DbTable +
+// 					` (hashed_ad_id, app_ids, created_at, updated_at) VALUES ($1, $2, $3, $4) ` +
+// 					` ON CONFLICT DO NOTHING`
+
+
+	_, err := db.Exec("INSERT INTO campaigns (id, event_name, message_template_id, start_at, end_at, created_at, updated_at)  VALUES ($1,$2,$3,$4,$5,$6,$7)", 1, "class", 12,  StartAt, EndAt, CreatedAt,
+	 UpdatedAt )
+	CheckError(err)
 	
 	// insert := fmt.Sprintf("INSERT INTO categories VALUES ('%s');", event_name )
 	// _, err := db.Exec(insert)
-	CheckError(err)
+	
 }
 
 
