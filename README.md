@@ -1,7 +1,35 @@
 # Task_internship
 
+2 December
+
+on conflict do nothing : https://dickyaryakesuma.medium.com/how-to-use-on-conflict-clause-in-postgresql-e4c43200646c#:~:text=ON%20CONFLICT%20CLAUSE%20is%20introduced%20to%20PostgreSQL%20to,or%20the%20constraint%20name%20or%20a%20WHERE%20clause. , 
+https://www.executeprogram.com/courses/sql/lessons/on-conflict-do-nothing
+
+iota : https://golangbyexample.com/iota-in-golang/#:~:text=IOTA%20in%20Go%20%28Golang%29%20Overview.%20Iota%20is%20an,Enum%20in%20Golang.%20IOTA%20provides%20an%20automated%20
 
 
+Explanation of code : Denigma
+Design db and generate code : DbDiagram
+
+
+---------------------------------------------------------------------------------
+
+1 December : 
+
+https://stackoverflow.com/questions/23415612/insert-datetime-using-now-with-go ,
+
+Unit Testing : 
+https://dev.to/techschoolguru/write-go-unit-tests-for-db-crud-with-random-data-53no ,
+https://medium.easyread.co/unit-test-sql-in-golang-5af19075e68e ,
+https://mayursinhsarvaiya.medium.com/how-to-mock-postgresql-database-for-unit-testing-in-golang-gorm-b690a4e4bc85 ,
+https://medium.com/geekculture/easily-run-your-unit-test-with-golang-gin-postgres-8a402a29e3f6 , 
+https://betterprogramming.pub/easy-guide-to-unit-testing-in-golang-4fc1e9d96679 , 
+
+Separate CRUD operations using function : https://www.linkedin.com/pulse/crud-operations-using-golang-postgresql-lucky-kumar/ , 
+
+https://stackoverflow.com/questions/47758359/how-to-store-golang-time-time-in-postgresql-timestamp ,
+
+---------------------------------------------------------------------------------------------------------------------
 
 POSTGRESql: 
 
@@ -44,6 +72,7 @@ SQL injection and XSS attacks : https://medium.com/@skavhar1998/thwart-sql-injec
 
 Others :
 
+( A good site to sharpen up sql basics : https://www.executeprogram.com/courses/sql ),
 Show all the tables in the database : 
 https://devdojo.com/bobbyiliev/how-to-show-all-tables-in-postgresql#:~:text=How%20to%20show%20all%20tables%20in%20PostgreSQL%3F%201,in%20the%20database%2C%20run%20the%20following%20command%3A%20
 Types of memories in computer : https://www.c-sharpcorner.com/article/stack-vs-heap-memory-c-sharp/#:~:text=This%20is%20for%20both%20beginners%20and%20professional%20C%23,allocated%20to%20store%20certain%20kinds%20of%20data%20objects.
