@@ -1,5 +1,11 @@
 # Task_internship
 
+22 December
+
+Advance golang playlist : https://www.youtube.com/watch?v=uKoYFg1Sna4&list=PL7D2RMSmRO9Lm9lUU2OhaGTMlCC8lYaU5&index=10
+
+
+
 2 December
 
 on conflict do nothing : https://dickyaryakesuma.medium.com/how-to-use-on-conflict-clause-in-postgresql-e4c43200646c#:~:text=ON%20CONFLICT%20CLAUSE%20is%20introduced%20to%20PostgreSQL%20to,or%20the%20constraint%20name%20or%20a%20WHERE%20clause. , 
