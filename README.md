@@ -1,5 +1,10 @@
-# Task_internship
+# Task_internship:
+23 December
+unique package in go : https://pkg.go.dev/github.com/mpvl/unique#section-documentation ,
+removing duplicate element manually : https://www.geeksforgeeks.org/golang-program-that-removes-duplicate-elements-from-the-array/
 
+
+---------------------------------------------------------------------------------------------------------------------------
 22 December
 
 Advance golang playlist : https://www.youtube.com/watch?v=uKoYFg1Sna4&list=PL7D2RMSmRO9Lm9lUU2OhaGTMlCC8lYaU5&index=10
