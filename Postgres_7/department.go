@@ -30,9 +30,15 @@ type Department struct {
 	ID       int
 	DeptName string
 	DeptCode string
+
+	
 }
 
-func (d *Department) Insert(db *sql.DB)error {
+
+
+
+
+func (d *Department) Insert(db *sql.DB) error {
 	t := reflect.TypeOf(d).Elem()
 	v := reflect.ValueOf(d).Elem()
 
@@ -51,10 +57,10 @@ func (d *Department) Insert(db *sql.DB)error {
 	// //fmt.Println(placeholders)
 	// fmt.Println(strings.Join(placeholders, ", "))
 
-	//  INSERT 
-	query := fmt.Sprintf("INSERT INTO %s (%s) VALUES (%s)",t.Name(),strings.Join(columns, ", "),strings.Join(placeholders, ", "))
+	//  INSERT
+	query := fmt.Sprintf("INSERT INTO %s (%s) VALUES (%s)", t.Name(), strings.Join(columns, ", "), strings.Join(placeholders, ", "))
 
-	// Execute the query
+	// Execute
 	_, err := db.Exec(query, values...)
 	if err != nil {
 		return err
@@ -70,10 +76,10 @@ func main() {
 	defer db.Close()
 
 	department := &Department{
-		ID:       87,
+		ID:       67,
 		DeptName: "SWE",
-		DeptCode: "SWE-111214",
 	}
+
 	
 	// department.Insert(db)
 
@@ -81,7 +87,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	
 }
 
 func CheckError(err error) {

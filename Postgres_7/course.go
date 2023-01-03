@@ -29,7 +29,7 @@ type Course struct {
 
 func (c *Course) Insert(db *sql.DB) error {
 	err := db.QueryRow(
-		"INSERT INTO course(id, course_name, course_code) VALUES($1, $2, $3) RETURNING id",
+		"INSERT INTO det(id, course_name, course_code) VALUES($1, $2, $3) RETURNING id",
 		c.id, c.CourseName, c.CourseCode,
 	).Scan(&c.id)
 	if err != nil {
@@ -50,7 +50,7 @@ func (c *Course) Update(db *sql.DB) error {
 }
 
 func (c *Course) Delete(db *sql.DB) error {
-	_, err := db.Exec("DELETE FROM course WHERE id=$1", c.id)
+	_, err := db.Exec("DELETE FROM Course WHERE id=$1", c.id)
 	if err != nil {
 		return err
 	}
@@ -67,7 +67,7 @@ func main() {
 	defer db.Close()
 
 	course := &Course{
-	id:          215,
+	id:          55012,
 	CourseName:  "DBMS",
 	CourseCode:  "DB-1222",
 	}

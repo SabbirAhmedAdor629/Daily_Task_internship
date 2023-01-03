@@ -20,14 +20,9 @@ func (c *Calculator_4) Subtract(a, b int) int {
 
 type cal_4_2 struct{}
 
-func (c *cal_4_2) Add(a,b int)int{
-	//
-}
+func (c *cal_4_2) Add(a, b int) int {}
 
-func (c *cal_4_2) Subtract(a, b int) int {
-	
-}
-
+func (c *cal_4_2) Subtract(a, b int) int {}
 
 func main() {
 	var c Calculator = &Calculator_4{}
@@ -37,9 +32,9 @@ func main() {
 	fmt.Println(result) // Output: -1
 
 	var d Calculator = &cal_4_2{}
-	res := d.Add(2,2)
+	res := d.Add(2, 2)
 	fmt.Println(res) //4
-	res = d.Subtract(2,2)
+	res = d.Subtract(2, 2)
 	fmt.Println(res) //0
 
 }
