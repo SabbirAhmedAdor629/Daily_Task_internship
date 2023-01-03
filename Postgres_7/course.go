@@ -24,7 +24,6 @@ const (
 type Course struct {
 	id          int
 	CourseName  string
-	CourseCode  string
 }
 
 func (c *Course) Insert(db *sql.DB) error {

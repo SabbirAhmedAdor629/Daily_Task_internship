@@ -4,19 +4,12 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-
-	//	"log"
 	"reflect"
 	"strconv"
 	"strings"
 
-	//	"time"
-	//	"log"
-	//	"time"
 	_ "github.com/lib/pq"
 )
-
-var db *sql.DB
 
 const (
 	host     = "localhost"
@@ -26,23 +19,24 @@ const (
 	dbname   = "student"
 )
 
-type Department struct {
-	ID       int
-	DeptName string
-	DeptCode string
-
-	
+type DB struct {
+	*sql.DB
 }
 
+func (db *DB) Connect() error {
+	conn, err := sql.Open("postgres", fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname))
+	if err != nil {
+		return err
+	}
+	db.DB = conn
+	return nil
+}
 
+func (db *DB) Insert(i interface{}) error {
+	// interface type
+	t := reflect.TypeOf(i).Elem()
+	v := reflect.ValueOf(i).Elem()
 
-
-
-func (d *Department) Insert(db *sql.DB) error {
-	t := reflect.TypeOf(d).Elem()
-	v := reflect.ValueOf(d).Elem()
-
-	// Create the list of column names and placeholders
 	columns := []string{}
 	placeholders := []string{}
 	values := []interface{}{}
@@ -51,13 +45,6 @@ func (d *Department) Insert(db *sql.DB) error {
 		placeholders = append(placeholders, "$"+strconv.Itoa(i+1))
 		values = append(values, v.Field(i).Interface())
 	}
-	// fmt.Println(t.Name())
-	// //fmt.Println(columns)
-	// fmt.Println(strings.Join(columns, ", "))
-	// //fmt.Println(placeholders)
-	// fmt.Println(strings.Join(placeholders, ", "))
-
-	//  INSERT
 	query := fmt.Sprintf("INSERT INTO %s (%s) VALUES (%s)", t.Name(), strings.Join(columns, ", "), strings.Join(placeholders, ", "))
 
 	// Execute
@@ -68,29 +55,45 @@ func (d *Department) Insert(db *sql.DB) error {
 	return nil
 }
 
-func main() {
+type Department struct {
+	ID       int
+	DeptName string
+	DeptCode string
+}
 
-	psqlconn := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
-	db, err := sql.Open("postgres", psqlconn)
-	CheckError(err)
+type Student struct {
+	Id    int
+	Name  string
+	Email string
+}
+
+
+func main() {
+	
+	db := &DB{}
+	err := db.Connect()
+	if err != nil {
+		log.Fatal(err)
+	}
 	defer db.Close()
 
+	//insert data into DEPARTMENT TABLE
 	department := &Department{
-		ID:       67,
+		ID:       63654564,
 		DeptName: "SWE",
+		DeptCode: "",
 	}
-
-	
-	// department.Insert(db)
-
-	if err := department.Insert(db); err != nil {
+	if err := db.Insert(department); err != nil {
 		log.Fatal(err)
 	}
 
-}
-
-func CheckError(err error) {
-	if err != nil {
-		panic(err)
+	//insert data into STUDENT TABLE
+	student_1 := &Student{
+		Id:    254,
+		Name:  "Ador",
+		Email: "sdfasfaaf",
+	}
+	if err := db.Insert(student_1); err != nil {
+		log.Fatal(err)
 	}
 }
