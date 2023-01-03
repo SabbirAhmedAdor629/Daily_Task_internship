@@ -29,6 +29,25 @@ type SNS_Event struct{
 }
 
 func main(){
+
+	map := map[string]interface{
+		completed_at : 2022-07-28T16:28:48-07:00
+		completed_at_2 : 2022-07-28T16:28:48-07:00
+
+		push_message : Dogs like water 💦 You like BONUS time!! 🎉
+		push_message_2 : Dogs like water 💦 You like BONUS time!! 🎉
+
+		call_to_action : 0
+		call_to_action_2 : 0
+		
+		push_messages : [map[created_at:01-01-2022 guid:mb-b23cf415-5a5d-4e90-8def-a1c9c39ec246 provider_message_id:12312 push_provider:aws::sn status:not-delivered updated_at:01-01-2022] map[created_at:01-01-2022 guid:mb-b23cf415-5a5d-4e90-8def-a1c9c39ec246 provider_message_id:12312 push_provider:aws::sn status:delivered updated_at:01-01-2022]]
+		
+		member_id : 0a9b82cb-31f8-6452-a6bf-dc44a09342e7
+		data : Push message notification
+		bonus_guid : mb-b23cf415-5a5d-4e90-8def-a1c9c39ec246
+	}
+
+
 	var event SNS_Event
 
 	jsondata := `{
@@ -74,6 +93,8 @@ func main(){
 	}else{
 		fmt.Println(err)
 	}
+
+	
 }
 
 
