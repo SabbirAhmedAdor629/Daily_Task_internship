@@ -1,0 +1,19 @@
+{
+    "skip_inbox" : boolean,
+    "push_message" :[
+        {
+            "member_guid" : string,
+            "device_id" : string,
+            "push_registration_id" : string,
+            "aws_message_id" : string,
+            "aws_arn_status" : string
+        }
+    ],
+    "message": {
+        "player_id" : int,
+        "message-template_id" : int,
+        "data" : string,
+        "badge" : boolean
+    }
+   
+}

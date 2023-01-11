@@ -1,0 +1,25 @@
+[
+	{
+		"coursename": "VlJIDHKIbgnBoaBJXmVj",
+		"Price": 299,
+		"Platform": "LearnCodeOnline.in",
+		"tags": [
+			"web-dev",
+			"js"
+		]
+	},
+	{
+		"coursename": "DVapNFBJmBwdHHCEwrgW",
+		"Price": 199,
+		"Platform": "LearnCodeOnline.in",
+		"tags": [
+			"full_stack",
+			"js"
+		]
+	},
+	{
+		"coursename": "AlFXhViWXAaLEiomnAJs",
+		"Price": 299,
+		"Platform": "LearnCodeOnline.in"
+	}
+]

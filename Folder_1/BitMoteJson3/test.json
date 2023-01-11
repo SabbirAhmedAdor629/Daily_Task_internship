@@ -1,0 +1,30 @@
+
+
+
+
+ 
+\"push_message\": [\n        
+{\n\"member_guid\": \"4a1147ac-494b-11ed-b878-0242ac120002\",\n
+\"device_id\": \"3478-34534\",\n
+\"push_registration_id\": \"354433\",\n
+\"aws_message_id\": \"1231\",\n
+\"aws_arn_status\": \"Failed\"\n},\n
+
+{\n
+\"member_guid\": \"4a1147ac-494b-11ed-b878-0242ac120002\",\n
+\"device_id\": \"238923-3432\",\n
+\"push_registration_id\": \"8989234\",\n
+\"aws_message_id\": \"178232\",\n
+\"aws_arn_status\": \"Success\"\n }\n    ],
+\n    \"message\": {\n  
+   \"push_registration_id\": \"8989234\",\n 
+\"aws_message_id\": \"178232\",\n 
+ \"aws_arn_status\": \"Success\"\n
+}\n    ],\n   
+ \"message\": {\n  
+   \"player_id\": 12001,\n        
+   \"message_template_id\": 24,\n        
+   \"data\": \"Push message notification\",\n        
+   \"badge\": true\n    }\n}"  
+
+

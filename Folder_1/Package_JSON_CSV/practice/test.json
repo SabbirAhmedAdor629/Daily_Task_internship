@@ -1,0 +1,29 @@
+[
+	{
+		"Name": "Reacjs Bootcamp",
+		"Price": 299,
+		"Platform": "LearnCodeOnline.in",
+		"Password": "abc123",
+		"Tags": [
+			"web-dev",
+			"js"
+		]
+	},
+	{
+		"Name": "MERN Bootcamp",
+		"Price": 199,
+		"Platform": "LearnCodeOnline.in",
+		"Password": "bcd123",
+		"Tags": [
+			"full_stack",
+			"js"
+		]
+	},
+	{
+		"Name": "Angular Bootcamp",
+		"Price": 299,
+		"Platform": "LearnCodeOnline.in",
+		"Password": "hit123",
+		"Tags": null
+	}
+]
