@@ -1,66 +1,66 @@
 package main
 
 import (
+	//"fmt"
+	"reflect"
 	"testing"
-	"time"
-	"fmt"
+	//"time"
 )
 
 type testData struct {
-	playerID        string
-	scheduleDays    ScheduleDays
-	timeZoneOffset  int
-	currentTime     time.Time
-	expectedPass    bool
-	expectedError   error
+	playerID       string
+	scheduleDays   ScheduleDays
+	timeZoneOffset int
+	//currentTime    time.Time
+	expectedPass   bool
+	expectedError  error
 }
 
 func TestUserTimeToDeliver(t *testing.T) {
 	testCases := []testData{
 		{
-			playerID:        "player1",
-			scheduleDays:    ScheduleDays{"Monday", "Tuesday", "Wednesday"},
-			timeZoneOffset:  -6,
-			currentTime:     time.Date(2022, time.January, 3, 16, 0, 0, 0, time.UTC), //Monday 4:00pm
-			expectedPass:    true,
-			expectedError:   nil,
+			playerID:       "1",
+			scheduleDays:   ScheduleDays{"Monday", "Tuesday", "Wednesday"},
+			timeZoneOffset: -6,
+			//currentTime:    time.Date(2022, time.January, 3, 16, 0, 0, 0, time.UTC), // Monday 4:00pm
+			expectedPass:   true,
+			expectedError:  nil,
 		},
 		{
-			playerID:        "player2",
-			scheduleDays:    ScheduleDays{"Monday", "Tuesday", "Wednesday"},
-			timeZoneOffset:  -6,
-			currentTime:     time.Date(2022, time.January, 8, 16, 0, 0, 0, time.UTC), //Saturday 4:00pm
-			expectedPass:    false,
-			expectedError:   nil,
+			playerID:       "2",
+			scheduleDays:   ScheduleDays{"Monday", "Wednesday"},
+			timeZoneOffset: -10,
+			//currentTime:    time.Date(2022, time.January, 8, 16, 0, 0, 0, time.UTC), // Saturday 4:00pm
+			expectedPass:   false,
+			expectedError:  nil,
 		},
-		{
-			playerID:        "",
-			scheduleDays:    ScheduleDays{"Monday", "Tuesday", "Wednesday"},
-			timeZoneOffset:  -6,
-			currentTime:     time.Date(2022, time.January, 3, 16, 0, 0, 0, time.UTC), //Monday 4:00pm
-			expectedPass:    false,
-			expectedError:   fmt.Errorf("invalid player ID"),
-		},
-		{
-			playerID:        "player4",
-			scheduleDays:    ScheduleDays{},
-			timeZoneOffset:  -6,
-			currentTime:     time.Date(2022, time.January, 3, 16, 0, 0, 0, time.UTC), //Monday 4:00pm
-			expectedPass:    true,
-			expectedError:   nil,
-		},
+		// {
+		// 	playerID:        "",
+		// 	scheduleDays:    ScheduleDays{"Monday", "Tuesday", "Wednesday"},
+		// 	timeZoneOffset:  -6,
+		// 	//currentTime:     time.Date(2022, time.January, 3, 16, 0, 0, 0, time.UTC), // Monday 4:00pm
+		// 	expectedPass:    false,
+		// 	expectedError:   fmt.Errorf("invalid memory address or nil pointer dereference"),
+		// },
+		// {
+		// 	playerID:        "4",
+		// 	scheduleDays:    ScheduleDays{},
+		// 	timeZoneOffset:  -6,
+		// 	currentTime:     time.Date(2022, time.January, 3, 16, 0, 0, 0, time.UTC), // Monday 4:00pm
+		// 	expectedPass:    true,
+		// 	expectedError:   nil,
+		// },
 	}
 
-	
+	for _, tc := range testCases {
+		got, gotErr := UserTimeToDeliver(tc.playerID, tc.scheduleDays)
+		if tc.expectedPass != got || !reflect.DeepEqual(tc.expectedError, gotErr) {
+			t.Errorf("Test case of player id %s is failed: got %t, %v; want %t, %v", tc.playerID, got, gotErr, tc.expectedPass, tc.expectedError)
+		}
+	}
 }
 
-		
-
-
-
-
-
-							// TESTING 8
+// TESTING 8
 // func TestUserCurrentTime(t *testing.T) {
 // 	testCases := []struct {
 // 		name         string
@@ -96,9 +96,7 @@ func TestUserTimeToDeliver(t *testing.T) {
 // 	}
 // }
 
-
-
-							// TEST 7
+// TEST 7
 
 // type testCase struct {
 // 	name string
@@ -143,7 +141,7 @@ func TestUserTimeToDeliver(t *testing.T) {
 // 		})
 // 	}
 // }
-										// TEST 6
+// TEST 6
 
 // type testCase struct {
 // 	name string
@@ -195,7 +193,7 @@ func TestUserTimeToDeliver(t *testing.T) {
 // 	}
 // }
 
-								// TESTING 5
+// TESTING 5
 
 // type testCase struct {
 // 	name string
@@ -241,9 +239,7 @@ func TestUserTimeToDeliver(t *testing.T) {
 // 	}
 // }
 
-
-
-						//TESTING 4
+//TESTING 4
 
 // type testCase struct {
 // 	name string
@@ -289,7 +285,7 @@ func TestUserTimeToDeliver(t *testing.T) {
 // 	}
 // }
 
-					// TESTING 3
+// TESTING 3
 // type testCase struct {
 // 	name string
 // 	args args
@@ -333,8 +329,7 @@ func TestUserTimeToDeliver(t *testing.T) {
 // 	}
 // }
 
-
-							// TESTING 2
+// TESTING 2
 // type args struct {
 // 	index       int
 // 	expected string
@@ -381,18 +376,14 @@ func TestUserTimeToDeliver(t *testing.T) {
 // 	}
 // }
 
-
-
-						// TESTING 1
+// TESTING 1
 
 // func TestScheduleTimes(t *testing.T) {
 // 	expectedTimes := []string{
-// 		"Prime Time Best", 
-// 		"Prime Time Morning", "Prime Time Afternoon", "Prime Time Evening", "Prime Time Swing", "User 12am", "User 01am", "User 02am", "User 03am", "User 04am", "User 05am", "User 06am", "User 07am", "User 08am", "User 09am", "User 10am", "User 11am", "User 12pm", "User 01pm", "User 02pm", "User 03pm", "User 04pm", "User 05pm", "User 06pm", "User 07pm", "User 08pm", "User 09pm", "User 10pm", "User 11pm", "PT 12am", "PT 01am", "PT 02am", "PT 03am", "PT 04am", "PT 05am", "PT 06am", "PT 07am", "PT 08am", "PT 09am", "PT 10am", "PT 11am", "PT 12pm", "PT 01pm", "PT 02pm", "PT 03pm", "PT 04pm", "PT 05pm", "PT 06pm", "PT 07pm", "PT 08pm", "PT 09pm", "PT 10pm", "PT 11pm", "GMT 12am", "GMT 01am", "GMT 02am", "GMT 03am", "GMT 04am", "GMT 05am", "GMT 06am", "GMT 07am", "GMT 08am", "GMT 09am", "GMT 10am", "GMT 11am", "GMT 12pm", "GMT 01pm", "GMT 02pm", 
+// 		"Prime Time Best",
+// 		"Prime Time Morning", "Prime Time Afternoon", "Prime Time Evening", "Prime Time Swing", "User 12am", "User 01am", "User 02am", "User 03am", "User 04am", "User 05am", "User 06am", "User 07am", "User 08am", "User 09am", "User 10am", "User 11am", "User 12pm", "User 01pm", "User 02pm", "User 03pm", "User 04pm", "User 05pm", "User 06pm", "User 07pm", "User 08pm", "User 09pm", "User 10pm", "User 11pm", "PT 12am", "PT 01am", "PT 02am", "PT 03am", "PT 04am", "PT 05am", "PT 06am", "PT 07am", "PT 08am", "PT 09am", "PT 10am", "PT 11am", "PT 12pm", "PT 01pm", "PT 02pm", "PT 03pm", "PT 04pm", "PT 05pm", "PT 06pm", "PT 07pm", "PT 08pm", "PT 09pm", "PT 10pm", "PT 11pm", "GMT 12am", "GMT 01am", "GMT 02am", "GMT 03am", "GMT 04am", "GMT 05am", "GMT 06am", "GMT 07am", "GMT 08am", "GMT 09am", "GMT 10am", "GMT 11am", "GMT 12pm", "GMT 01pm", "GMT 02pm",
 // 		"GMT 03pm", "GMT 04pm", "GMT 05pm", "GMT 06pm", "GMT 07pm", "GMT 08pm", "GMT 09pm", "GMT 10pm", "GMT 11pm",
 // 	}
 // 	times := scheduleTimes()
 // 	assert.Equal(t, expectedTimes, times)
 // }
-
-

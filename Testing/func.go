@@ -109,7 +109,7 @@ func AvailableKeyInMap(mapData map[string]interface{}, keyList ...string) bool {
 
 func main() {
 
-	playerID := "12345"
+	playerID := "123"
 	scheduleDays := []string{"Tuesday"}
 	y := make([]interface{}, len(scheduleDays))
 	for i, v := range scheduleDays {
@@ -134,33 +134,35 @@ type TargetingPlayerHash struct {
 }
 
 func getPlayerHashData() ([]byte, error) {
-	hash := map[string]string{
-		"time_zone_offset": "-6",
+	hash := map[string]interface{}{
+		"time_zone_offset": -23,
 	}
 	jsonPlayerHash, err := json.Marshal(hash)
 	return jsonPlayerHash, err
 }
 
 func getPlayerHashValue(playerId int) *TargetingPlayerHash {
-	hash, err := getPlayerHashData() 	// recieve a json data here
+	hash, err := getPlayerHashData() // recieve a json data here
 	if err != nil {
 		fmt.Println(err)
 		return nil
 	}
+	//fmt.Println(hash)
 	playerHashMap := TargetingPlayerHash{}
-	_ = json.Unmarshal([]byte(hash), &playerHashMap) 	// decoding the json data, store into struct
+	_ = json.Unmarshal([]byte(hash), &playerHashMap) // decoding the json data, store into struct
+	//fmt.Println(*playerHashMap.TimeZoneOffset)
 	return &playerHashMap
 }
 
 func getValidPlayerId(player_id string) (*int, error) {
 	if player_id == "" {
-		opCounters.incInvalidPlayerIds(1)				
+		opCounters.incInvalidPlayerIds(1)
 		return nil, fmt.Errorf("player_id can not be null")
 	}
 
 	playerId, err := strconv.Atoi(player_id)
 	if err != nil {
-		opCounters.incInvalidPlayerIds(1)			// counter increase
+		opCounters.incInvalidPlayerIds(1) 			// counter increase
 		return nil, fmt.Errorf("player_id must be of type int")
 	}
 	return &playerId, nil
@@ -168,7 +170,7 @@ func getValidPlayerId(player_id string) (*int, error) {
 
 func contains(elements []interface{}, v string) bool {
 	for _, s := range elements {
-		if v == s {					// comparing days
+		if v == s { // comparing days
 			return true
 		}
 	}
@@ -180,19 +182,19 @@ func UserTimeToDeliver(player_id string, scheduleDays ScheduleDays) (bool, error
 		return true, nil
 	}
 
-	playerId, err := getValidPlayerId(player_id)  		//validates the player id
+	playerId, err := getValidPlayerId(player_id) //validates the player id
 	if err != nil {
 		return false, err
 	}
 
-	playerHash := getPlayerHashValue(*playerId) 		// placeholder :  Im::Targeting::Target.player(player_id)
-
+	playerHash := getPlayerHashValue(*playerId) // hash value of the targeted player id
+	//fmt.Println(playerHash)
 	if playerHash == nil || playerHash.TimeZoneOffset == nil {
 		return false, nil
 	}
-
+	//fmt.Println(*playerHash.TimeZoneOffset)
 	userDay := time.Now().UTC().Add(time.Hour * (time.Duration(*playerHash.TimeZoneOffset))).Weekday()
-
+	//fmt.Println(userDay)
 	if contains(scheduleDays, userDay.String()) {
 		return true, nil
 	}
