@@ -34,22 +34,6 @@ func TestUserTimeToDeliver(t *testing.T) {
 			expectedPass:   false,
 			expectedError:  nil,
 		},
-		// {
-		// 	playerID:        "",
-		// 	scheduleDays:    ScheduleDays{"Monday", "Tuesday", "Wednesday"},
-		// 	timeZoneOffset:  -6,
-		// 	//currentTime:     time.Date(2022, time.January, 3, 16, 0, 0, 0, time.UTC), // Monday 4:00pm
-		// 	expectedPass:    false,
-		// 	expectedError:   fmt.Errorf("invalid memory address or nil pointer dereference"),
-		// },
-		// {
-		// 	playerID:        "4",
-		// 	scheduleDays:    ScheduleDays{},
-		// 	timeZoneOffset:  -6,
-		// 	currentTime:     time.Date(2022, time.January, 3, 16, 0, 0, 0, time.UTC), // Monday 4:00pm
-		// 	expectedPass:    true,
-		// 	expectedError:   nil,
-		// },
 	}
 
 	for _, tc := range testCases {
