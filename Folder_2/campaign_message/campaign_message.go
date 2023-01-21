@@ -433,31 +433,24 @@ func userCurrentTime(userTimeZoneOffset int) string {
 }
 
 func handler(ctx context.Context, sqsEvent *events.SQSEvent) (string, error) {
-
-	// start logging
 	logger.
 		NewEntry(log_msg_begin, LogMsgTxt).
 		Debug()
-	// Log environment configuration parameters
 	logger.
-		NewEntry(log_msg_envars, LogMsgTxt).
+		NewEntry(log_msg_envars, LogMsgTxt).			// Log environment configuration parameters
 		WithStruct(env).
 		Debug()
-	// Log lambda parameters
 	logger.
-		NewEntry(log_msg_request, LogMsgTxt).
+		NewEntry(log_msg_request, LogMsgTxt).			// Log lambda parameters
 		WithStruct(sqsEvent).
 		Debug()
-
 	opCounters = &OperationalCounters{RWMutex: sync.RWMutex{}}
-	// Attempt to load the parameters file written by the lambda extension.
 	if err := parameterStore.ReadConfig(); err != nil {
 		logger.
-			NewEntry(log_msg_parameters_store_parse_error, LogMsgTxt).
+			NewEntry(log_msg_parameters_store_parse_error, LogMsgTxt).	// Attempt to load the parameters file written by the lambda extension.
 			Error(err.Error())
 		os.Exit(1)
 	}
-
 	parameters, err := parameterStore.ParameterToBytes(DEFAULT_HONEYBADGER_KEY)
 	if err != nil {
 		logger.
@@ -471,14 +464,12 @@ func handler(ctx context.Context, sqsEvent *events.SQSEvent) (string, error) {
 	_ = json.Unmarshal(parameters, &badgerApiKey)
 
 	badger.Configure(honeybadger.Configuration{APIKey: badgerApiKey.Value, Env: env.Environment})
-
 	if err := secretsStore.ReadConfig(); err != nil {
 		logger.
 			NewEntry(log_msg_secrets_store_parse_error, LogMsgTxt).
 			Error(err.Error())
 		os.Exit(1)
 	}
-
 	secrets, err := secretsStore.ParameterToBytes(env.PostgresKey)
 	if err != nil {
 		logger.
@@ -486,10 +477,8 @@ func handler(ctx context.Context, sqsEvent *events.SQSEvent) (string, error) {
 			Error(err.Error())
 		os.Exit(1)
 	}
-
 	dbCreds := DBCredentialsType{}
 	_ = json.Unmarshal(secrets, &dbCreds)
-
 	if !connectionEstablished {
 		connectionEstablished = true
 		logger.Debug("DATABASE", "connecting")

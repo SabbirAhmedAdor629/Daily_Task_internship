@@ -79,7 +79,7 @@ func main() {
 
 	//insert data into DEPARTMENT TABLE
 	department := &Department{
-		ID:       63654564,
+		ID:       675,
 		Dept_Name: "SWE",
 		DeptCode: "",
 	}
@@ -89,7 +89,7 @@ func main() {
 
 	//insert data into STUDENT TABLE
 	student_1 := &Student{
-		Id:    2554,
+		Id:    2555464,
 		Name:  "Ador",
 		Email: "sdfasfaaf",
 	}

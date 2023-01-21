@@ -109,7 +109,7 @@ func OpenDatabase(Host string, Port int, User, Password, DbName string, DbSsl Ss
 	return &pgClient{
 		RWMutex: sync.RWMutex{},
 		DB:      db,
-	}, nil
+	},
 }
 
 // func (client *pgClient) UpdateWorkLog(log_chunk_id int, status string) error {

@@ -21,7 +21,7 @@ const (
 	dbname   = "student"
 )
 
-// Insert inserts a record into the database
+// Insert a record into the database
 func (d *Department) Insert(db *sql.DB) error {
     t := reflect.TypeOf(d).Elem()
     v := reflect.ValueOf(d).Elem()
