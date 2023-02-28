@@ -1,4 +1,11 @@
 # Task_internship:
+
+# AWS SQS
+
+tutorial : https://www.youtube.com/watch?v=CyYZ3adwboc&list=PL9nWRykSBSFggui3a4UPprVtfqIDad-dx&index=9
+
+
+
 23 December
 unique package in go : https://pkg.go.dev/github.com/mpvl/unique#section-documentation ,
 removing duplicate element manually : https://www.geeksforgeeks.org/golang-program-that-removes-duplicate-elements-from-the-array/
