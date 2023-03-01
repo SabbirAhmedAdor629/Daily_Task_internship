@@ -5,6 +5,11 @@
 
 Tutorial : inserting : https://www.youtube.com/watch?v=O-p8yCEokcc&list=PL98O9IEjfOUMS0JL5BJZQASgH5otCpk6s
 
+stack overflow :
+https://stackoverflow.com/questions/62002279/resources-to-learn-dynamodb-query#:~:text=Here%20are%20some%20great%20resources%20that%20I%20gathered,DynamoDB%206%20AWS%20DynamoDB%207%20The%20DynamoDB%20Book
+
+differneces between sql and no-sql : https://www.andlearning.org/sql-vs-nosql/
+
 # AWS SQS
 
 tutorials :
@@ -273,10 +278,7 @@ https://www.youtube.com/watch?v=qw--VYLpxG4  ( yt freecodecamp)
 
 to setup environment variables : https://linuxhint.com/connect-to-postgresql-database-command-line-windows/
 
-DynamoDB :
-https://stackoverflow.com/questions/62002279/resources-to-learn-dynamodb-query#:~:text=Here%20are%20some%20great%20resources%20that%20I%20gathered,DynamoDB%206%20AWS%20DynamoDB%207%20The%20DynamoDB%20Book
 
-differneces between sql and no-sql : https://www.andlearning.org/sql-vs-nosql/
 
 
 
