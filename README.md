@@ -7,6 +7,44 @@ tutorials :
 Theory : https://www.youtube.com/watch?v=CyYZ3adwboc&list=PL9nWRykSBSFggui3a4UPprVtfqIDad-dx&index=9 , demo : https://www.youtube.com/watch?v=nhEFJgIhvuk
 
 
+# AWS Lambda 
+
+Getting started : https://aws.amazon.com/lambda/getting-started/
+
+official learning resource : https://aws.amazon.com/lambda/resources/?aws-lambda-resources-blog.sort-by=item.additionalFields.createdDate&aws-lambda-resources-blog.sort-order=desc
+
+official documentation : https://docs.aws.amazon.com/lambda/?icmpid=docs_homepage_serverless
+
+Videos : https://serverlessland.com/video?services=AWS+Lambda
+
+Video playlists : https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11
+
+https://www.udemy.com/course/aws-serverless-a-complete-introduction/https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11 ,
+
+https://www.geeksforgeeks.org/introduction-to-aws-lambda/ ,
+
+https://pmuens.medium.com/aws-fundamentals-what-is-lambda-32d17a89dda2 ,
+
+https://www.freecodecamp.org/news/code-and-deploy-a-serverless-api-using-go-and-aws/ ,
+
+ultimate guide :  https://medium.com/softkraft/aws-lambda-in-golang-the-ultimate-guide-4eec6c53149a , 
+
+very basic of aws : https://www.youtube.com/watch?v=k1RI5locZE4
+
+Protocol buffers : https://www.youtube.com/watch?v=k1RI5locZE4
+
+https://www.youtube.com/watch?v=7FZ6ZyzGex0 , 
+
+https://www.udemy.com/course/protocol-buffers/
+
+
+Handler : 
+https://perennialsky.medium.com/understand-handle-handler-and-handlefunc-in-go-e2c3c9ecef03
+
+
+
+
+
 # Others
 
 23 December
@@ -127,39 +165,7 @@ https://code.visualstudio.com/Docs/editor/debugging#:~:text=To%20run%20or%20debu
 https://www.youtube.com/watch?v=ORrELERGIHs
 
 
-AWS Lambda :
 
-Getting started : https://aws.amazon.com/lambda/getting-started/
-
-official learning resource : https://aws.amazon.com/lambda/resources/?aws-lambda-resources-blog.sort-by=item.additionalFields.createdDate&aws-lambda-resources-blog.sort-order=desc
-
-official documentation : https://docs.aws.amazon.com/lambda/?icmpid=docs_homepage_serverless
-
-Videos : https://serverlessland.com/video?services=AWS+Lambda
-
-Video playlists : https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11
-
-https://www.udemy.com/course/aws-serverless-a-complete-introduction/https://www.youtube.com/watch?v=3BlXU2zEzvY&list=PLxoOrmZMsAWyBy3qwWdNhtAi-J4yLK1k9&index=11 ,
-
-https://www.geeksforgeeks.org/introduction-to-aws-lambda/ ,
-
-https://pmuens.medium.com/aws-fundamentals-what-is-lambda-32d17a89dda2 ,
-
-https://www.freecodecamp.org/news/code-and-deploy-a-serverless-api-using-go-and-aws/ ,
-
-ultimate guide :  https://medium.com/softkraft/aws-lambda-in-golang-the-ultimate-guide-4eec6c53149a , 
-
-very basic of aws : https://www.youtube.com/watch?v=k1RI5locZE4
-
-Protocol buffers : https://www.youtube.com/watch?v=k1RI5locZE4
-
-https://www.youtube.com/watch?v=7FZ6ZyzGex0 , 
-
-https://www.udemy.com/course/protocol-buffers/
-
-
-Handler : 
-https://perennialsky.medium.com/understand-handle-handler-and-handlefunc-in-go-e2c3c9ecef03
 
 
 
