@@ -2,7 +2,9 @@
 
 # AWS SQS
 
-tutorial : https://www.youtube.com/watch?v=CyYZ3adwboc&list=PL9nWRykSBSFggui3a4UPprVtfqIDad-dx&index=9
+tutorials :
+
+Theory : https://www.youtube.com/watch?v=CyYZ3adwboc&list=PL9nWRykSBSFggui3a4UPprVtfqIDad-dx&index=9 , demo : https://www.youtube.com/watch?v=nhEFJgIhvuk
 
 
 # Others
