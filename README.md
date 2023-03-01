@@ -1,5 +1,10 @@
 # Task_internship:
 
+
+# Dynamo DB
+
+Tutorial : inserting : https://www.youtube.com/watch?v=O-p8yCEokcc&list=PL98O9IEjfOUMS0JL5BJZQASgH5otCpk6s
+
 # AWS SQS
 
 tutorials :
