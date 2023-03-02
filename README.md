@@ -15,6 +15,8 @@ differneces between sql and no-sql : https://www.andlearning.org/sql-vs-nosql/
 
 tutorials :
 
+AWS Lambda in Go - Lambda and SQS : https://www.youtube.com/watch?v=snqWw0C9Zbs
+
 Theory : https://www.youtube.com/watch?v=CyYZ3adwboc&list=PL9nWRykSBSFggui3a4UPprVtfqIDad-dx&index=9 , demo : https://www.youtube.com/watch?v=nhEFJgIhvuk
 
 
