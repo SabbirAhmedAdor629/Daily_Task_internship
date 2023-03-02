@@ -20,6 +20,8 @@ Theory : https://www.youtube.com/watch?v=CyYZ3adwboc&list=PL9nWRykSBSFggui3a4UPp
 
 # AWS Lambda 
 
+Getting Started : https://www.youtube.com/watch?v=tgrV2FmVyZY
+
 Getting started : https://aws.amazon.com/lambda/getting-started/
 
 official learning resource : https://aws.amazon.com/lambda/resources/?aws-lambda-resources-blog.sort-by=item.additionalFields.createdDate&aws-lambda-resources-blog.sort-order=desc
