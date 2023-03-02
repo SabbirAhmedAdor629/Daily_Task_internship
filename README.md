@@ -3,7 +3,8 @@
 
 # Dynamo DB
 
-Tutorial : inserting : https://www.youtube.com/watch?v=O-p8yCEokcc&list=PL98O9IEjfOUMS0JL5BJZQASgH5otCpk6s
+Tutorial : inserting (python) : https://www.youtube.com/watch?v=O-p8yCEokcc&list=PL98O9IEjfOUMS0JL5BJZQASgH5otCpk6s ,
+insert, update, delete (golang) : https://www.youtube.com/watch?v=xLoWwQzlcZM
 
 stack overflow :
 https://stackoverflow.com/questions/62002279/resources-to-learn-dynamodb-query#:~:text=Here%20are%20some%20great%20resources%20that%20I%20gathered,DynamoDB%206%20AWS%20DynamoDB%207%20The%20DynamoDB%20Book
