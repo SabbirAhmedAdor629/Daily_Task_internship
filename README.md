@@ -1,5 +1,11 @@
 # Task_internship:
 
+# Regarding the project task 
+
+trigger lambda using api : https://www.youtube.com/watch?v=WFLoP0vxfx8
+
+errors handeling : https://www.youtube.com/watch?v=UB7vH9ZyrBI
+
 
 # Dynamo DB
 
