@@ -14,6 +14,7 @@ errors handeling : https://www.youtube.com/watch?v=UB7vH9ZyrBI
 # Dynamo DB
 
 Tutorial : inserting (python) : https://www.youtube.com/watch?v=O-p8yCEokcc&list=PL98O9IEjfOUMS0JL5BJZQASgH5otCpk6s ,
+
 insert, update, delete (golang) : https://www.youtube.com/watch?v=xLoWwQzlcZM
 
 stack overflow :
@@ -29,7 +30,9 @@ AWS Lambda in Go - Publish to SNS and SQS :  https://www.youtube.com/watch?v=SMW
 
 AWS Lambda in Go - Lambda and SQS (send from sqs reciving in lambda) : https://www.youtube.com/watch?v=snqWw0C9Zbs
 
-Theory : https://www.youtube.com/watch?v=CyYZ3adwboc&list=PL9nWRykSBSFggui3a4UPprVtfqIDad-dx&index=9 , demo : https://www.youtube.com/watch?v=nhEFJgIhvuk
+Theory : https://www.youtube.com/watch?v=CyYZ3adwboc&list=PL9nWRykSBSFggui3a4UPprVtfqIDad-dx&index=9 
+
+demo : https://www.youtube.com/watch?v=nhEFJgIhvuk
 
 
 # AWS Lambda 
