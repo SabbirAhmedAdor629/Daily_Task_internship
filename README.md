@@ -4,6 +4,8 @@
 
 passing with query para-meters : https://www.youtube.com/watch?v=uFsaiEhr1zs
 
+ways of recieving query-parameters in golang : https://docs.google.com/document/d/1lVHN7P87VQiy13YpDXSVG_V_WF7ybS3b2MUMbdUj7f0/edit?usp=sharing
+
 trigger lambda using api : https://www.youtube.com/watch?v=WFLoP0vxfx8
 
 errors handeling : https://www.youtube.com/watch?v=UB7vH9ZyrBI
