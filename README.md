@@ -1,6 +1,6 @@
 # Task_internship:
 
-# Regarding the project task 
+# Regarding the project task (API GATEWAY) 
 
 passing with query para-meters : https://www.youtube.com/watch?v=uFsaiEhr1zs
 
