@@ -17,6 +17,12 @@ errors handeling : https://www.youtube.com/watch?v=UB7vH9ZyrBI
 
 # Dynamo DB
 
+CRUD operations in golang : https://www.youtube.com/watch?v=pr4x8KdIfDU&t=1175s, 
+
+AWS setup and CRUD Operations : https://www.youtube.com/watch?v=xLoWwQzlcZM&t=2350s
+
+to get AWS access key and secret key : https://www.youtube.com/watch?v=Fxflt0v2Mfc
+
 Tutorial : inserting (python) : https://www.youtube.com/watch?v=O-p8yCEokcc&list=PL98O9IEjfOUMS0JL5BJZQASgH5otCpk6s ,
 
 insert, update, delete (golang) : https://www.youtube.com/watch?v=xLoWwQzlcZM
