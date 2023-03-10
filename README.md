@@ -13,6 +13,15 @@ trigger lambda using api : https://www.youtube.com/watch?v=WFLoP0vxfx8
 errors handeling : https://www.youtube.com/watch?v=UB7vH9ZyrBI
 
 
+# AWS API Gateway
+
+Tutorials and Workshops : https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-tutorials.html
+
+
+
+
+
+
 
 
 # Dynamo DB
