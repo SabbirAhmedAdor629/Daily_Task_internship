@@ -2,7 +2,8 @@
 
 # Terraform
 install and setup : https://phoenixnap.com/kb/how-to-install-terraform
-PlayList : https://www.youtube.com/watch?v=1lbMFxSPcr0&list=PL6XT0grm_TfgdaAjTmLb4QedMCCMQHISm&index=4&ab_channel=GauravSharma
+Playlist 2 : https://www.youtube.com/watch?v=jJX6S5JAGpI&list=PL7iMyoQPMtAOz187ezONf7pL8oGZRobYl&ab_channel=RahulWagh
+PlayList (bullshit) : https://www.youtube.com/watch?v=1lbMFxSPcr0&list=PL6XT0grm_TfgdaAjTmLb4QedMCCMQHISm&index=4&ab_channel=GauravSharma
 
 # Regarding the project task (API GATEWAY) 
 
