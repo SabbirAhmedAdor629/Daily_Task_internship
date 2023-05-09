@@ -1,5 +1,9 @@
 # Task_internship:
 
+# Terraform
+install and setup : https://phoenixnap.com/kb/how-to-install-terraform
+PlayList : https://www.youtube.com/watch?v=1lbMFxSPcr0&list=PL6XT0grm_TfgdaAjTmLb4QedMCCMQHISm&index=4&ab_channel=GauravSharma
+
 # Regarding the project task (API GATEWAY) 
 
 passing with query para-meters : https://www.youtube.com/watch?v=uFsaiEhr1zs
