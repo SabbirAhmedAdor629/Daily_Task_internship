@@ -1,13 +1,16 @@
 # Task_internship:
 
 # Terraform
-install and setup : https://phoenixnap.com/kb/how-to-install-terraform
+
+crate and invoke lambda terraform : https://automateinfra.com/2021/04/06/how-to-setup-aws-lambda-using-terraform-step-by-step/
 
 API Gateway & IAM S3 Access & Serverless : https://www.youtube.com/watch?v=bybQxpM0kSQ&ab_channel=AntonPutra
 
 Playlist 2 : https://www.youtube.com/watch?v=jJX6S5JAGpI&list=PL7iMyoQPMtAOz187ezONf7pL8oGZRobYl&ab_channel=RahulWagh
 
 PlayList (bullshit) : https://www.youtube.com/watch?v=1lbMFxSPcr0&list=PL6XT0grm_TfgdaAjTmLb4QedMCCMQHISm&index=4&ab_channel=GauravSharma
+
+install and setup : https://phoenixnap.com/kb/how-to-install-terraform
 
 # Regarding the project task (API GATEWAY) 
 
