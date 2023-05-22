@@ -29,7 +29,7 @@ errors handeling : https://www.youtube.com/watch?v=UB7vH9ZyrBI
 
 Tutorials and Workshops : https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-tutorials.html
 
-To create rest api with path parameters : https://www.youtube.com/watch?v=Oupz1ZA1G1Q&ab_channel=AWSclouddemos
+To create rest api with path parameters : https://www.youtube.com/watch?v=Oupz1ZA1G1Q&ab_channel=AWSclouddemos , https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html
 
 
 
