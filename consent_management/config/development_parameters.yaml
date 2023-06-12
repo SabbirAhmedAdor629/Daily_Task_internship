@@ -1,0 +1,3 @@
+keys:
+  - "/honeybadger/admin/api_key"
+  - "/ip_quality_score/private_key"

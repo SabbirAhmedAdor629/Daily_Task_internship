@@ -1,0 +1,82 @@
+Production:
+  LambdaExecution: arn:aws:iam::237634799245:role/ConsentManagementProductionRole
+  Path:
+  Description: 'consent management'
+  Timeout: 60
+  MemorySize: 128
+  Concurrency: '4'
+  HttpsListenerArn:
+  RequestMethods: ['GET','POST']
+  SubnetIds:
+  SecurityGroupIds:
+  Extensions: ['arn:aws:lambda:us-east-1:237634799245:layer:PasswordExtension:7']
+  EnvironmentVariables:
+    APP_NAME: 'PROD-V1-GO_CONSENT_MANAGEMENT'
+    REGION: 'us-east-1'
+    LOG_LEVEL: 'INFO'
+    TARGET_ENVIRONMENT:	'production'
+    CONFIG_PARAMETERS_FILE: '/var/task/config/production_parameters.yaml'
+    PARAMETERS_STORE: '/tmp/parameters.txt'
+    DYNAMO_TABLE_NAME: 'consent_management_production'
+    DYNAMO_CONSENT_TABLE_NAME: 'consent_management_production'
+    DYNAMO_MAPPING_TABLE_NAME: 'jurisdiction_mapping_production'
+    CLOUDFRONT_HOST_URL: 'cdn.influencemobile.com'
+    API_KEYS_TABLE_NAME: 'api_keys_production'
+    TIMESTAMP_LIMIT_SECONDS: 30
+    ALLOWED_AGREEMENT_LIST:     'pp,tou,idc'
+    ALLOWED_JURISDICTION_LIST:  'gdpr'
+    ALLOWED_LOCALE_LIST:        'en-uk'
+Staging:
+  LambdaExecution: arn:aws:iam::237634799245:role/ConsentManagementStagingRole
+  Path:
+  Description: 'consent management'
+  Timeout: 15
+  MemorySize: 128
+  Concurrency: '1'
+  HttpsListenerArn:
+  RequestMethods: ['GET','POST']
+  SubnetIds:
+  SecurityGroupIds:
+  Extensions: ['arn:aws:lambda:us-east-1:237634799245:layer:PasswordExtension:7']
+  EnvironmentVariables:
+    APP_NAME: 'STAGING-V1-GO_CONSENT_MANAGEMENT'
+    REGION: 'us-east-1'
+    LOG_LEVEL: 'DEBUG'
+    TARGET_ENVIRONMENT: 'staging'
+    CONFIG_PARAMETERS_FILE: '/var/task/config/staging_parameters.yaml'
+    PARAMETERS_STORE: '/tmp/parameters.txt'
+    DYNAMO_CONSENT_TABLE_NAME: 'consent_management_staging'
+    DYNAMO_MAPPING_TABLE_NAME: 'jurisdiction_mapping_staging'
+    CLOUDFRONT_HOST_URL: 'cdn.influencemobile.com'
+    API_KEYS_TABLE_NAME: 'api_keys_staging'
+    TIMESTAMP_LIMIT_SECONDS: 30
+    ALLOWED_AGREEMENT_LIST:     'pp,tou,idc'
+    ALLOWED_JURISDICTION_LIST:  'gdpr'
+    ALLOWED_LOCALE_LIST:        'en-uk'
+Development:
+  LambdaExecution: arn:aws:iam::237634799245:role/ConsentManagementDevelopmentRole
+  Path:
+  Description: 'consent management'
+  Timeout: 5
+  MemorySize: 128
+  Concurrency: '1'
+  HttpsListenerArn: 'arn:aws:elasticloadbalancing:us-east-1:237634799245:listener/app/influence-mobile-test/988d14944f63da9d/d15a05be83ff7c8f'
+  RequestMethods: ['GET','POST']
+  SubnetIds:
+  SecurityGroupIds:
+  Extensions: ['arn:aws:lambda:us-east-1:237634799245:layer:PasswordExtension:7']
+  EnvironmentVariables:
+    APP_NAME: 'DEVELOPMENT-V1-GO_CONSENT_MANAGEMENT'
+    REGION: 'us-east-1'
+    LOG_LEVEL: 'DEBUG'
+    TARGET_ENVIRONMENT: 'development'
+    CONFIG_PARAMETERS_FILE: '/var/task/config/development_parameters.yaml'
+    PARAMETERS_STORE: '/tmp/parameters.txt'
+    DYNAMO_CONSENT_TABLE_NAME: 'consent_management_development'
+    DYNAMO_MAPPING_TABLE_NAME: 'jurisdiction_mapping_development'
+    CLOUDFRONT_HOST_URL: 'cdn.influencemobile.com'
+    API_KEYS_TABLE_NAME: 'api_keys_development'
+    TIMESTAMP_LIMIT_SECONDS: 30
+    ALLOWED_AGREEMENT_LIST:     'pp,tou,idc'
+    ALLOWED_JURISDICTION_LIST:  'gdpr'
+    ALLOWED_LOCALE_LIST:        'en-uk'
